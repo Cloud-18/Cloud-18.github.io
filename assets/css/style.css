@@ -452,6 +452,10 @@ div.team-hex hr {
     margin: 0% 10vw;
 }
 
+div.team-hex p {
+    text-indent: 0!important;
+}
+
 @keyframes pulse {
     0%   {opacity: 1; transform: translateY(-20px); }
     25%  {opacity: 0.5; transform: translateY(-5px);}
