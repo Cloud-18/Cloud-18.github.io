@@ -88,7 +88,6 @@ $(document).ready(function () {
     file = file[file.length - 1].split('#');
     file = file[0];
     if (file == 'index.html' || file == '' || file == 'Bajasite') {
-        console.log(69);
         createNewsTiles();
         createGalleries();
         $("#about").append(bkgtxt);

@@ -333,7 +333,7 @@ div#showresult img {
 
 #showresult h2 {
     float: left;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: 3em;
     /* font-style: italic; */
     font-weight: bold;
@@ -626,6 +626,8 @@ div.team-hex hr {
     div#showresult img {
         width: 75%;
     }
+
+
 
     div#about .bkgtxt {
         top: 0px;
