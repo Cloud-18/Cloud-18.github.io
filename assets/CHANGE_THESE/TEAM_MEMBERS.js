@@ -101,12 +101,13 @@ var team = [
 		"email": "suspension"
 	},
 	{
-		"name": "Christopher_Impellizzeri",
+		"name": "Chris_Impellizzeri",
 		"major": "met",
 		"grad": 22,
 		"designer": "Suspension Designer",
 		"system": 2,
-		"email": "suspension"
+		"email": "suspension",
+		"display_name": 'Christopher Impellizzeri'
 	},
 	{
 		"name": "Grayson_Keaton",
@@ -125,12 +126,13 @@ var team = [
 		"email": "steering"
 	},
 	{
-		"name": "Daniel_Salai",
+		"name": "Dan_Salai",
 		"major": "me",
 		"grad": 22,
 		"designer": "Brakes Designer",
 		"system": 5,
-		"email": "brakes"
+		"email": "brakes",
+		"display_name": "Daniel Salai"
 	},
 	{
 		"name": "Julia_Nelson",
@@ -149,12 +151,13 @@ var team = [
 		"email": "reduction"
 	},
 	{
-		"name": "Samuel_Dhykoff",
+		"name": "Sam_Dhykoff",
 		"major": "me",
 		"grad": 22,
 		"designer": "Primary CVT Designer",
 		"system": 8,
-		"email": "primary"
+		"email": "primary",
+		"display_name": "Samuel Dhykoff"
 	},
 	{
 		"name": "Brendan_Murphy",
