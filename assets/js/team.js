@@ -32,7 +32,7 @@ function createTeamTiles(){
 		var lowerName = person.name.toLowerCase();
 		var chosen = (person.display_name ? person.display_name : person.name);
 		var modname = chosen.split('_').join(' ');
-		return '<li class="hex"><div class="hexIn" data-toggle="modal" data-target="#gallery\' + index + \'"><a class="hexLink" href="#" style="cursor: default;"><img class="portrait" src="assets/CHANGE_THESE/headshots/' + lowerName + '.jpg" alt="" onerror=this.src="assets/images/Not-Pictured.jpg" /><h1>' + modname + '</h1><p>' + tile + '</p></a></div></li>';
+		return '<li class="hex"><div class="hexIn" data-toggle="modal" data-target="#gallery\' + index + \'"><a class="hexLink" href="#" style="cursor: default;"><img class="portrait" src="MAKE_CHANGES_IN_THIS_FOLDER/headshots/' + lowerName + '.jpg" alt="" onerror=this.src="assets/images/Not-Pictured.jpg" /><h1>' + modname + '</h1><p>' + tile + '</p></a></div></li>';
 	}
 	
 	function generalmembertile(person) {
