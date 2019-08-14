@@ -69,7 +69,7 @@ function createTeamTiles(){
 
 	const eboard_positions = ['Team Manager', 'Project Manager', 'Treasurer', 'Secretary'];
 	
-	team = team.filter(person => !person.hide);
+	team = team.filter(person => !person.hide && person.grad >= year);
 	eboard_positions.forEach(title => {
 		$('ul.eboardList').append(eboardtile(title))
 	});

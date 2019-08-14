@@ -11,7 +11,7 @@
  *	hidden: (true/false) If nothing is there, it is assumed false
  *	display_name: If there is a special character in their name or some special name case, put it here
 */
-var team = [
+var team = [ // You do not need to worry about removing members after they graduate. They are filtered out
 	{
 		"name": "Erica_Neese",
 		"major": "ie",
