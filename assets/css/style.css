@@ -59,8 +59,8 @@ nav#mynav:not(.bg-white) li a {
 
 .btn-platinum {
     color: #fff;
-    background-color: #e5e4e2;
-    border-color: #e5e4e2;
+    background-color: #aabcd7;
+    border-color: #aabcd7;
 }
 
 .btn-gold {
@@ -71,8 +71,8 @@ nav#mynav:not(.bg-white) li a {
 
 .btn-silver {
     color: #fff;
-    background-color: #C0C0C0;
-    border-color: #C0C0C0;
+    background-color: #c0c0c0; // b5b5b5
+    border-color: #c0c0c0;
 }
 
 .btn-bronze {

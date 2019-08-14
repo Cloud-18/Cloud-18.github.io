@@ -11,7 +11,7 @@ function dispResults(year) {
             case 2:
                 return '<li class="list-group-item"><div class="row"><div class="col-3"><span class="badge badge-silver badge-pill">2nd</span></div><div class="col-9"><b>' + name + ': </b>2nd</div></div></li>'
             case 3:
-                return '<li class="list-group-item"><div class="row"><div class="col-3"><span class="badge badge-silver badge-pill">3rd</span></div><div class="col-9"><b>' + name + ': </b>3rd</div></div></li>'
+                return '<li class="list-group-item"><div class="row"><div class="col-3"><span class="badge badge-bronze badge-pill">3rd</span></div><div class="col-9"><b>' + name + ': </b>3rd</div></div></li>'
             case 11:
             case 12:
             case 13:
