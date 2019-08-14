@@ -260,6 +260,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"name": "Asif_Habib",
 		"major": "met",
 		"grad": 20,
+		"lead": "Test Systems Lead",
+		"system": 20,
 		"first": 16
 	},
 	{
