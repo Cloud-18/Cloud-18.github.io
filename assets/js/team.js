@@ -52,7 +52,7 @@ function createTeamTiles(){
 		}
 		var emailstr = "";
 		if(person.email) {
-			emailstr = '<h5>Email: <i>' + person.email + '@ritbaja.com&ensp;</i>';
+			emailstr = '<h5>Email: <i>' + person.email + '@ritbaja.com&ensp;</i>' + emailblock(person);
 		}
 		var major = "<h5>Major: " + majorlookup(person.major) + "</h5>";
 		var years = (year + 1) - person.first;
@@ -70,7 +70,7 @@ function createTeamTiles(){
 				years = years + "th";
 		}
 		var snip = (person.snippet ? '<p class="snip">"' + person.snippet + '"</p>' : "");
-        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + emailstr + emailblock(person) +  snip + '</div></div></div></div></div>';
+        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + emailstr +  snip + '</div></div></div></div></div>';
     }
 	
 	function generalmembertile(person) {
