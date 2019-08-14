@@ -1,4 +1,4 @@
-/*	Example Options: (* means required)
+/*	Example Options: (+ means required)
  *	+ name: First_Last (Do not use any other formatting, this attaches the picture to it)
  *	+ major: cive, ce, cet, me, met, emet, mfet, ee, eet, ie, cs (Or full major name)
  *	+ grad: (graduation year)
