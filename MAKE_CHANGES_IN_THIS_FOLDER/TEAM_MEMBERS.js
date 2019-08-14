@@ -1,22 +1,23 @@
-/*Example Options: (* means required)
-*name: First_Last (Do not use any other formatting, this attaches the picture to it)
-*major: cive, ce, cet, me, met, emet, mfet, ee, eet, ie, cs (Or full major name)
-*grad: (graduation year)
-eboard: [Full Title]
-lead: [Full Title]
-designer: [Full Title]
-manuf: [Full Title]
-system: A number used for sorting pictures. I use design group #'s
-email: [USE THIS PART]@ritbaja.com (eboard only need emails if they have another position)
-hidden: (true/false) If nothing is there, it is assumed false
-display_name: If there is a special character in their name or some special name case, put it here
+/*	Example Options: (* means required)
+ *	+ name: First_Last (Do not use any other formatting, this attaches the picture to it)
+ *	+ major: cive, ce, cet, me, met, emet, mfet, ee, eet, ie, cs (Or full major name)
+ *	+ grad: (graduation year)
+ *	eboard: [Full Title]
+ *	lead: [Full Title]
+ *	designer: [Full Title]
+ *	manuf: [Full Title]
+ *	system: A number used for sorting pictures. I use design group #'s
+ *	email: [USE THIS PART]@ritbaja.com (eboard only need emails if they have another position)
+ *	hidden: (true/false) If nothing is there, it is assumed false
+ *	display_name: If there is a special character in their name or some special name case, put it here
 */
 var team = [
 	{
 		"name": "Erica_Neese",
 		"major": "ie",
 		"grad": 20,
-		"eboard": "Team Manager"
+		"eboard": "Team Manager",
+		"snippet":"I love this team!"
 	},
 	{
 		"name": "Adam_Seidman",

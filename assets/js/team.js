@@ -32,8 +32,18 @@ function createTeamTiles(){
 		var lowerName = person.name.toLowerCase();
 		var chosen = (person.display_name ? person.display_name : person.name);
 		var modname = chosen.split('_').join(' ');
-		return '<li class="hex"><div class="hexIn" data-toggle="modal" data-target="#gallery\' + index + \'"><a class="hexLink" href="#" style="cursor: default;"><img class="portrait" src="MAKE_CHANGES_IN_THIS_FOLDER/headshots/' + lowerName + '.jpg" alt="" onerror=this.src="assets/images/Not-Pictured.jpg" /><h1>' + modname + '</h1><p>' + tile + '</p></a></div></li>';
+		return '<li class="hex"><div class="hexIn" data-toggle="modal" data-target="#team_' + lowerName + '"><a class="hexLink" href="#" style="cursor: default;"><img class="portrait" src="assets/images/headshots/' + lowerName + '.jpg" alt="" onerror=this.src="assets/images/Not-Pictured.jpg" /><h1>' + modname + '</h1><div id="chevrondownwhite"></div><p class="font-weight-bold">' + tile + '</p></a></div></li>';
 	}
+
+	function modaltile(person) {
+		var lowerName = person.name.toLowerCase();
+		var chosen = (person.display_name ? person.display_name : person.name);
+		var modname = chosen.split('_').join(' ');
+		var title = (person.eboard ? "<h5>" + person.eboard + "</h5>": "");
+		var major = "<h5>" + majorlookup(person.major) + "</h5>";
+		var snip = (person.snippet ? '<p class="snip">"' + person.snippet + '"</p>' : "");
+        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: \'' + person.grad + '</h5>' + snip + '</div></div></div></div></div>';
+    }
 	
 	function generalmembertile(person) {
 		return tilewrap(majorlookup(person.major) + ', 20' + person.grad, person);
@@ -47,11 +57,13 @@ function createTeamTiles(){
 	function eboardtile(title) {
 		var person = team.find(member => member.eboard === title);
 		person.email = title.split(' ').join('').toLowerCase();
-		return tilewrap(title + '<br/>' + majorlookup(person.major) + ', 20' + person.grad + emailblock(person), person);
+		return tilewrap(title, person);
 	}
 	
+// + '<br/>' + majorlookup(person.major) + ', 20' + person.grad,
+
 	function designertile(person, title) {
-		return tilewrap(title + '<br/>' + majorlookup(person.major) + ', 20' + person.grad + emailblock(person), person);
+		return tilewrap(title + '<br/>' + majorlookup(person.major) + ', 20' + person.grad, person);
 	}
 
 
@@ -95,6 +107,8 @@ function createTeamTiles(){
 		if(a.name > b.name) { return 1; }
 		return 0;
 	}).forEach(person => $('ul.matriculatedList').append(generalmembertile(person)));
+
+	team.forEach(person => $('div#teammodals').append(modaltile(person)));
 }
 
 

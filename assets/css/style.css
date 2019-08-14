@@ -170,8 +170,22 @@ div#news.page{
 div#chevrondown {
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    left: calc(50% - 12px);
     background: url(../images/chevron-bottom.png) no-repeat center center ;
+    height: 24px;
+    width: 24px;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    /* width: 16px; */
+}
+
+div#chevrondownwhite {
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 12px);
+    background: url(../images/chevron-bottom-white.png) no-repeat center center ;
     height: 24px;
     width: 24px;
     animation-name: pulse;
@@ -333,7 +347,7 @@ div#showresult img {
 
 #showresult h2 {
     float: left;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: 3em;
     /* font-style: italic; */
     font-weight: bold;
@@ -452,6 +466,22 @@ div.team-hex hr {
     margin: 0% 10vw;
 }
 
+div.team-hex p {
+    text-indent: 0!important;
+}
+
+div#teammodals img{
+    height: 400px;
+}
+
+div#teammodals .modal-body{
+    padding: 0px!important;
+}
+
+div#teammodals .modal-body div:nth-of-type(2){
+    padding:30px;
+}
+
 @keyframes pulse {
     0%   {opacity: 1; transform: translateY(-20px); }
     25%  {opacity: 0.5; transform: translateY(-5px);}
@@ -459,7 +489,7 @@ div.team-hex hr {
     75%  {opacity: 0.5; transform: translateY(-5px);}
     100% {opacity: 1; transform: translateY(-20px);}
 }
-
+/* Mobile Go Here */
 @media (max-width: 768px) {
     .desktop-only {
         display: none;
@@ -626,6 +656,8 @@ div.team-hex hr {
     div#showresult img {
         width: 75%;
     }
+
+
 
     div#about .bkgtxt {
         top: 0px;
