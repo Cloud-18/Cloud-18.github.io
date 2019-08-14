@@ -16,7 +16,8 @@ var team = [
 		"name": "Erica_Neese",
 		"major": "ie",
 		"grad": 20,
-		"eboard": "Team Manager"
+		"eboard": "Team Manager",
+		"snippet":"I love this team!"
 	},
 	{
 		"name": "Adam_Seidman",
