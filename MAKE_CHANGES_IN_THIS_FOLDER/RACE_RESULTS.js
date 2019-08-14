@@ -449,5 +449,50 @@ var results = {
             "Overall_Dynamic": 1,
             "Overall": 1,
         }]
+    },
+	2009: {
+        "mike": 2,
+        "car": {
+            "name": "J-Arm",
+            "weight": "215",
+            "imgloc": 'assets/images/team/david_jones.jpg'
+        },
+        "racetitles": ["Alabama", "Oregon", "Wisconsin"],
+        "races": [{
+            "Design": 1,
+            "Acceleration": 9,
+            "Maneuverability": 1,
+            "Sled_Pull": 56,
+            "Suspension_and_Traction": 1,
+            "Cost": 47,
+            "Endurance": 6,
+            "Overall_Static": 3,
+            "Overall_Dynamic": 6,
+            "Overall": 5,
+        }, {
+            "Design": 2,
+            "Acceleration": 1,
+            "Maneuverability": 1,
+            "Hill_Climb": 51,
+            "Rock_Crawl": 25,
+            "Cost": 42,
+            "Presentation": 20,
+            "Endurance": 9,
+            "Overall_Static": 19,
+            "Overall_Dynamic": 11,
+            "Overall": 10,
+        }, {
+            "Design": 19,
+            "Acceleration": 17,
+            "Maneuverability": 23,
+            "Sled_Pull": 18,
+            "Suspension_and_Traction": 17,
+            "Mud_Bog": 67,
+            "Cost": 76,
+            "Endurance": 12,
+            "Overall_Static": 29,
+            "Overall_Dynamic": 25,
+            "Overall": 15,
+        }]
     }
 };
