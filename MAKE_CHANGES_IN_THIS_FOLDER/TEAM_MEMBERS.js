@@ -10,6 +10,7 @@
  *	email: [USE THIS PART]@ritbaja.com (eboard only need emails if they have another position)
  *	hidden: (true/false) If nothing is there, it is assumed false
  *	display_name: If there is a special character in their name or some special name case, put it here
+ *	first: First year on team
 */
 var team = [ // You do not need to worry about removing members after they graduate. They are filtered out
 	{
@@ -17,25 +18,29 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"major": "ie",
 		"grad": 20,
 		"eboard": "Team Manager",
-		"snippet":"I love this team!"
+		"snippet":"I love this team!",
+		"first": 17
 	},
 	{
 		"name": "Adam_Seidman",
 		"major": "ce",
 		"grad": 22,
-		"eboard": "Treasurer"
+		"eboard": "Treasurer",
+		"first": 18
 	},
 	{
 		"name": "Justin_Neves",
 		"major": "cive",
 		"grad": 20,
-		"eboard": "Project Manager"
+		"eboard": "Project Manager",
+		"first": 16
 	},
 	{
 		"name": "Griffin_Joslin",
 		"major": "Graphic Design",
 		"grad": 22,
-		"eboard": "Secretary"
+		"eboard": "Secretary",
+		"first": 19
 	},
 	{
 		"name": "Ethan_Yaro",
@@ -43,7 +48,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"lead": "Chief Engineer",
 		"system": 0,
-		"email": "chiefengineer"
+		"email": "chiefengineer",
+		"first": 16
 	},
 	{
 		"name": "Dana_Eschler",
@@ -51,7 +57,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"lead": "Frame Lead",
 		"system": 1,
-		"email": "frame"
+		"email": "frame",
+		"first": 17
 	},
 	{
 		"name": "Kishoth_Manoranjithan",
@@ -59,7 +66,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"lead": "Suspension Lead",
 		"system": 2,
-		"email": "suspension"
+		"email": "suspension",
+		"first": 17
 	},
 	{
 		"name": "Kyle_Mellendorf",
@@ -67,7 +75,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"lead": "Driveline/Outboard Lead",
 		"system": 4,
-		"email": "driveline"
+		"email": "driveline",
+		"first": 17
 	},
 	{
 		"name": "Justin_Woods",
@@ -75,7 +84,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"lead": "Brakes Lead",
 		"system": 5,
-		"email": "brakes"
+		"email": "brakes",
+		"first": 17
 	},
 	{
 		"name": "Bryan_Lin",
@@ -83,7 +93,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"lead": "Electrical Lead",
 		"system": 9,
-		"email": "dataaq"
+		"email": "dataaq",
+		"first": 17
 	},
 	{
 		"name": "Alex_Smart",
@@ -91,7 +102,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"lead": "Research and Development",
 		"system": 10,
-		"email": "rnd"
+		"email": "rnd",
+		"first": 17
 	},
 	{
 		"name": "Anthony_Coppola",
@@ -99,7 +111,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 23,
 		"designer": "Suspension Designer",
 		"system": 2,
-		"email": "suspension"
+		"email": "suspension",
+		"first": 19
 	},
 	{
 		"name": "Chris_Impellizzeri",
@@ -108,7 +121,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"designer": "Suspension Designer",
 		"system": 2,
 		"email": "suspension",
-		"display_name": 'Christopher Impellizzeri'
+		"display_name": 'Christopher Impellizzeri',
+		"first": 18
 	},
 	{
 		"name": "Grayson_Keaton",
@@ -116,7 +130,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 22,
 		"designer": "Shocks/Vehicle Dynamics",
 		"system": 2,
-		"email": "suspension"
+		"email": "suspension",
+		"first": 18
 	},
 	{
 		"name": "Anthony_Blasie",
@@ -124,7 +139,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 23,
 		"designer": "Steering Designer",
 		"system": 3,
-		"email": "steering"
+		"email": "steering",
+		"first": 19
 	},
 	{
 		"name": "Dan_Salai",
@@ -133,7 +149,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"designer": "Brakes Designer",
 		"system": 5,
 		"email": "brakes",
-		"display_name": "Daniel Salai"
+		"display_name": "Daniel Salai",
+		"first": 18
 	},
 	{
 		"name": "Julia_Nelson",
@@ -141,7 +158,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"designer": "Ergonomics Designer",
 		"system": 6,
-		"email": "ergo"
+		"email": "ergo",
+		"first": 17
 	},
 	{
 		"name": "Susan_Lane",
@@ -149,7 +167,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"designer": "Reduction Designer",
 		"system": 7,
-		"email": "reduction"
+		"email": "reduction",
+		"first": 17
 	},
 	{
 		"name": "Sam_Dhykoff",
@@ -158,7 +177,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"designer": "Primary CVT Designer",
 		"system": 8,
 		"email": "primary",
-		"display_name": "Samuel Dhykoff"
+		"display_name": "Samuel Dhykoff",
+		"first": 18
 	},
 	{
 		"name": "Brendan_Murphy",
@@ -166,7 +186,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"designer": "Secondary CVT Designer",
 		"system": 8.5,
-		"email": "secondary"
+		"email": "secondary",
+		"first": 18
 	},
 	{
 		"name": "Nick_Harter",
@@ -175,7 +196,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"designer": "Driveline Integration/Engines",
 		"system": 12,
 		"email": "engines",
-		"display_name": "E. Nicholas Harter"
+		"display_name": "E. Nicholas Harter",
+		"first": 19
 	},
 	{
 		"name": "Ledyard_McFadden",
@@ -183,7 +205,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 22,
 		"manuf": "Manufacturing Manager",
 		"system": 1,
-		"email": "mman"
+		"email": "mman",
+		"first": 19
 	},
 	{
 		"name": "Brie_Ludwig",
@@ -191,7 +214,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"manuf": "Composites Lead",
 		"system": 2,
-		"email": "composites"
+		"email": "composites",
+		"first": 17
 	},
 	{
 		"name": "Bennett_Wong",
@@ -199,7 +223,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"manuf": "CNC Machinist",
 		"system": 3,
-		"email": "alathe"
+		"email": "alathe",
+		"first": 17
 	},
 	{
 		"name": "Alan_Richman",
@@ -207,7 +232,8 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"manuf": "CNC Machinist",
 		"system": 4,
-		"email": "amill"
+		"email": "amill",
+		"first": 18
 	},
 	{
 		"name": "David_Jones",
@@ -215,159 +241,190 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 21,
 		"manuf": "CNC Machinist",
 		"system": 5,
-		"email": "amill"
+		"email": "amill",
+		"first": 17
 	},
 	{
 		"name": "Allison_Moulton",
 		"major": "me",
-		"grad": 20
+		"grad": 20,
+		"first": 17
 	},
 	{
 		"name": "Anna_Gallo",
 		"major": "ee",
-		"grad": 20
+		"grad": 20,
+		"first": 16
 	},
 	{
 		"name": "Asif_Habib",
 		"major": "met",
-		"grad": 20
+		"grad": 20,
+		"first": 16
 	},
 	{
 		"name": "Caitlin_Barron",
 		"major": "ce",
-		"grad": 20
+		"grad": 20,
+		"first": 17
 	},
 	{
 		"name": "Colton_Johnson",
 		"major": "me",
-		"grad": 20
+		"grad": 20,
+		"first": 18
 	},
 	{
 		"name": "Connor_Blasie",
 		"major": "ee",
-		"grad": 20
+		"grad": 20,
+		"first": 16
 	},
 	{
-		"name": "Danielle_Worthington",
+		"name": "Dani_Worthington",
 		"major": "ASL Interpreting/Mechanical Engineering Technology",
-		"grad": 20
+		"grad": 20,
+		"first": 16
 	},
 	{
 		"name": "Elizabeth_Harvey",
 		"major": "met",
-		"grad": 20
+		"grad": 20,
+		"first": 16
 	},
 	{
 		"name": "Erik_Gross",
 		"major": "met",
-		"grad": 20
+		"grad": 20,
+		"first": 17
 	},
 	{
 		"name": "Ethan_Spence",
 		"major": "me",
-		"grad": 20
+		"grad": 20,
+		"first": 17
 	},
 	{
 		"name": "Max_Marchioli",
 		"major": "met",
-		"grad": 20
+		"grad": 20,
+		"first": 16
 	},
 	{
 		"name": "Adam_Case",
 		"major": "met",
-		"grad": 22
+		"grad": 22,
+		"first": 18
 	},
 	{
 		"name": "Ava_Shortino",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Brendan_Leuze",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Connor_Orcutt",
 		"major": "me",
-		"grad": 22
+		"grad": 22,
+		"first": 19
 	},
 	{
 		"name": "Evan_Garber",
 		"major": "met",
-		"grad": 22
+		"grad": 22,
+		"first": 19
 	},
 	{
 		"name": "Graham_Cullen",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Hayden_Barbeau",
 		"major": "Art??",
-		"grad": 22
+		"grad": 22,
+		"first": 19
 	},
 	{
 		"name": "Jacob_Giuliano",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "James_Lucinese",
 		"major": "me",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Jason_Kaye",
 		"major": "me",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Matthew_Brogan",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Michael_Borodzik",
 		"major": "me",
 		"grad": 23,
-		"display_name": "Michael \"Craig\" Borodzik"
+		"display_name": "Michael \"Craig\" Borodzik",
+		"first": 19
 	},
 	{
 		"name": "Natalie_Mantegna",
 		"major": "me",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Pete_VanCamp",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Rhys_Dsouza",
 		"major": "ee",
 		"grad": 22,
-		"display_name": "Rhys D'Souza"
+		"display_name": "Rhys D'Souza",
+		"first": 18
 	},
 	{
 		"name": "Ryan_Stratton",
 		"major": "met",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Victoria_Bellomo",
 		"major": "me",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Zach_Jackson",
 		"major": "Chemical Engineering",
-		"grad": 23
+		"grad": 23,
+		"first": 19
 	},
 	{
 		"name": "Dan_Cosachov",
 		"major": "met",
 		"grad": 21,
+		"first": 17,
 		"hide": true
 	}
 ]; // no comma on last person

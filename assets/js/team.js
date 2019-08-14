@@ -39,14 +39,42 @@ function createTeamTiles(){
 		var lowerName = person.name.toLowerCase();
 		var chosen = (person.display_name ? person.display_name : person.name);
 		var modname = chosen.split('_').join(' ');
-		var title = (person.eboard ? "<h5>" + person.eboard + "</h5>": "");
-		var major = "<h5>" + majorlookup(person.major) + "</h5>";
+		var title = (person.eboard ? person.eboard: "");
+		if(person.lead) {
+			title = person.lead;
+		} else if (person.designer) {
+			title = person.designer;
+		} else if (person.manuf) {
+			title = person.manuf;
+		}
+		if(title.length > 0) {
+			title = "<h5>Role: " + title + "</h5>";
+		}
+		var major = "<h5>Major: " + majorlookup(person.major) + "</h5>";
+		var years = (year + 1) - person.first;
+		switch (years) {
+			case 1:
+				years = "1st";
+				break;
+			case 2:
+				years = "2nd";
+				break;
+			case 3:
+				years = "3rd";
+				break;
+			default:
+				years = years + "th";
+		}
 		var snip = (person.snippet ? '<p class="snip">"' + person.snippet + '"</p>' : "");
-        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: \'' + person.grad + '</h5>' + snip + '</div></div></div></div></div>';
+        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + snip + '</div></div></div></div></div>';
     }
 	
 	function generalmembertile(person) {
-		return tilewrap(majorlookup(person.major) + ', 20' + person.grad, person);
+		var grad_year = ''
+		if(person.grad !== year) {
+			grad_year = ', 20' + person.grad;
+		}
+		return tilewrap(majorlookup(person.major) + grad_year, person);
 	}
 	
 	function emailblock(person) {
@@ -59,15 +87,10 @@ function createTeamTiles(){
 		person.email = title.split(' ').join('').toLowerCase();
 		return tilewrap(title, person);
 	}
-	
-// + '<br/>' + majorlookup(person.major) + ', 20' + person.grad,
 
 	function designertile(person, title) {
-		return tilewrap(title + '<br/>' + majorlookup(person.major) + ', 20' + person.grad, person);
+		return tilewrap(title, person);
 	}
-
-
-	const eboard_positions = ['Team Manager', 'Project Manager', 'Treasurer', 'Secretary'];
 	
 	team = team.filter(person => !person.hide && person.grad >= year);
 	eboard_positions.forEach(title => {
