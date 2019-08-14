@@ -83,7 +83,8 @@ function createTeamTiles(){
 	
 	function emailblock(person) {
 		var modname = person.name.split('_')[0];
-		return '<span onclick="email(\'' + person.email + '\')"><i style="cursor: pointer;" title="Email ' + modname + '" class="fa fa-envelope-o"></i></span>&nbsp;<span onclick="getcopy(\'' + person.email + '\')"><i style="cursor: pointer;" title="Copy ' + modname + '\'s Email" class="fa fa-copy"></i></span></h5>';
+		var copystr = (mobile ? '' : '&nbsp;<span onclick="getcopy(\'' + person.email + '\')"><i style="cursor: pointer;" title="Copy ' + modname + '\'s Email" class="fa fa-copy"></i></span>')
+		return '<span onclick="email(\'' + person.email + '\')"><i style="cursor: pointer;" title="Email ' + modname + '" class="fa fa-envelope-o"></i></span>' + copystr + '</h5>';
 	}
 	
 	function eboardtile(title) {
