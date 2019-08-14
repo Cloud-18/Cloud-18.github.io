@@ -377,10 +377,9 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"first": 19
 	},
 	{
-		"name": "Michael_Borodzik",
+		"name": "Mike_Borodzik",
 		"major": "me",
 		"grad": 23,
-		"display_name": "Michael \"Craig\" Borodzik",
 		"first": 19
 	},
 	{
