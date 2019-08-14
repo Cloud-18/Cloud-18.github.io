@@ -47,4 +47,6 @@ function dispResults(year) {
         $accordion.append(createRaceEvent(eventname, eventresults));
     }); 
     $('div#showresult').append($accordion);
+    var width = $('div#showresult h2').width()
+    $('div#showresult h2').css('margin-top', width);
 }
