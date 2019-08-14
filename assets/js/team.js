@@ -50,6 +50,10 @@ function createTeamTiles(){
 		if(title.length > 0) {
 			title = "<h5>Role: " + title + "</h5>";
 		}
+		var emailstr = "";
+		if(person.email) {
+			emailstr = '<h5>Email: <i>' + person.email + '@ritbaja.com&ensp;</i>';
+		}
 		var major = "<h5>Major: " + majorlookup(person.major) + "</h5>";
 		var years = (year + 1) - person.first;
 		switch (years) {
@@ -66,7 +70,7 @@ function createTeamTiles(){
 				years = years + "th";
 		}
 		var snip = (person.snippet ? '<p class="snip">"' + person.snippet + '"</p>' : "");
-        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + snip + '</div></div></div></div></div>';
+        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + emailstr + emailblock(person) +  snip + '</div></div></div></div></div>';
     }
 	
 	function generalmembertile(person) {
@@ -78,8 +82,8 @@ function createTeamTiles(){
 	}
 	
 	function emailblock(person) {
-		var modname = person.name.split('_');
-		return '<br/><span style="cursor: pointer;" title="Email ' + modname[0] + '" class="btn" onclick="email(\'' + person.email + '\')"><i class="fa fa-envelope"></i></span>';
+		var modname = person.name.split('_')[0];
+		return '<span onclick="email(\'' + person.email + '\')"><i style="cursor: pointer;" title="Email ' + modname + '" class="fa fa-envelope-o"></i></span>&nbsp;<span onclick="getcopy(\'' + person.email + '\')"><i style="cursor: pointer;" title="Copy ' + modname + '\'s Email" class="fa fa-copy"></i></span></h5>';
 	}
 	
 	function eboardtile(title) {

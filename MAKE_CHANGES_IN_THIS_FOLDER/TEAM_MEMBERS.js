@@ -261,6 +261,7 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"major": "met",
 		"grad": 20,
 		"lead": "Test Systems Lead",
+		"email": "testsystems",
 		"system": 20,
 		"first": 16
 	},
