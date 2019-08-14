@@ -32,7 +32,7 @@ function createTeamTiles(){
 		var lowerName = person.name.toLowerCase();
 		var chosen = (person.display_name ? person.display_name : person.name);
 		var modname = chosen.split('_').join(' ');
-		return '<li class="hex"><div class="hexIn" data-toggle="modal" data-target="#team_' + lowerName + '"><a class="hexLink" href="#" style="cursor: default;"><img class="portrait" src="assets/images/headshots/' + lowerName + '.jpg" alt="" onerror=this.src="assets/images/Not-Pictured.jpg" /><h1>' + modname + '</h1><div id="chevrondownwhite"></div><p class="font-weight-bold">' + tile + '</p></a></div></li>';
+		return '<li class="hex"><div class="hexIn" data-toggle="modal" data-target="#team_' + lowerName + '"><a class="hexLink" href="#"><img class="portrait" src="assets/images/headshots/' + lowerName + '.jpg" alt="" onerror=this.src="assets/images/Not-Pictured.jpg" /><h1>' + modname + '</h1><div id="chevrondownwhite"></div><p class="font-weight-bold">' + tile + '</p></a></div></li>';
 	}
 
 	function modaltile(person) {
