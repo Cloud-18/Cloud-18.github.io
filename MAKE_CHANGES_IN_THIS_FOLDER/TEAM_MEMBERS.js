@@ -348,7 +348,7 @@ var team = [ // You do not need to worry about removing members after they gradu
 	},
 	{
 		"name": "Hayden_Barbeau",
-		"major": "Art??",
+		"major": "Industrial Design",
 		"grad": 22,
 		"first": 19
 	},
