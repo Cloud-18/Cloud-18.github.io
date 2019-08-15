@@ -48,11 +48,28 @@ function createTeamTiles(){
 			title = person.manuf;
 		}
 		if(title.length > 0) {
-			title = "<h5>Role: " + title + "</h5>";
+			//title = "<h5>Role: " + title + "</h5>";
+			if(!person.other) {
+				person.other = [];
+			}
+			person.other.unshift(title);
+		}
+		if(person.other && person.other.length > 0) {
+			title = "<h5>Role" + (person.other.length > 1 ? "s" : "") + ": ";
+			person.other.forEach(role => title = title + role + ", ");
+			title = title.substring(0, title.length - 2);
+			title = title + "</h5>"
 		}
 		var emailstr = "";
 		if(person.email) {
 			emailstr = '<h5>Email: <i>' + person.email + '@ritbaja.com&ensp;</i>' + emailblock(person);
+		}
+		var seniorstr = '';
+		if(person.prev) { //person.grad === year && 
+			seniorstr = "<h5>Previous Roles Held: ";
+			person.prev.forEach(role => seniorstr = seniorstr + role + ", ");
+			seniorstr = seniorstr.substring(0, seniorstr.length - 2);
+			seniorstr = seniorstr + "</h5>"
 		}
 		var major = "<h5>Major: " + majorlookup(person.major) + "</h5>";
 		var years = (year + 1) - person.first;
@@ -70,7 +87,7 @@ function createTeamTiles(){
 				years = years + "th";
 		}
 		var snip = (person.snippet ? '<p class="snip">"' + person.snippet + '"</p>' : "");
-        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + emailstr +  snip + '</div></div></div></div></div>';
+        return '<div class="modal fade" id="team_' + lowerName + '" tabindex="-1" role="dialog"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-body"><div class="float-left"><img src="assets/images/headshots/' + lowerName + '.jpg" alt=""></div><div class="float-left"><h1>' + modname + '</h1> ' + title + major + '<h5>Graduation: 20' + person.grad + '</h5><h5>' + years + ' year on RIT Baja</h5>' + seniorstr + emailstr +  snip + '</div></div></div></div></div>';
     }
 	
 	function generalmembertile(person) {

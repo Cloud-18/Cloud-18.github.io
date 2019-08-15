@@ -11,6 +11,8 @@
  *	hidden: (true/false) If nothing is there, it is assumed false
  *	display_name: If there is a special character in their name or some special name case, put it here
  *	first: First year on team
+ *	other: This is a list of other roles a person may hold in addition to one of the main categories
+ *	prev: This is a list of previous roles held by this person
 */
 var team = [ // You do not need to worry about removing members after they graduate. They are filtered out
 	{
@@ -19,28 +21,45 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"eboard": "Team Manager",
 		"snippet":"I love this team!",
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Composites Lead"
+		]
 	},
 	{
 		"name": "Adam_Seidman",
 		"major": "ce",
 		"grad": 22,
 		"eboard": "Treasurer",
-		"first": 18
+		"first": 18,
+		"other": [
+			"Suspension Test Engineer",
+			"Web Developer"
+		]/*,
+		"prev": [
+			"Frame",
+			"Treasurer"
+		]*/
 	},
 	{
 		"name": "Justin_Neves",
 		"major": "cive",
 		"grad": 20,
 		"eboard": "Project Manager",
-		"first": 16
+		"first": 16,
+		"prev": [
+			"Structural Suspension Lead"
+		]
 	},
 	{
 		"name": "Griffin_Joslin",
 		"major": "Graphic Design",
 		"grad": 22,
 		"eboard": "Secretary",
-		"first": 19
+		"first": 19,
+		"other": [
+			"Art Director"
+		]
 	},
 	{
 		"name": "Ethan_Yaro",
@@ -49,7 +68,10 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"lead": "Chief Engineer",
 		"system": 0,
 		"email": "chiefengineer",
-		"first": 16
+		"first": 16,
+		"prev": [
+			"Brakes Lead"
+		]
 	},
 	{
 		"name": "Dana_Eschler",
@@ -67,7 +89,10 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"lead": "Suspension Lead",
 		"system": 2,
 		"email": "suspension",
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Vehicle Dynamics"
+		]
 	},
 	{
 		"name": "Kyle_Mellendorf",
@@ -76,7 +101,10 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"lead": "Driveline/Outboard Lead",
 		"system": 4,
 		"email": "driveline",
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Primary CVT Designer"
+		]
 	},
 	{
 		"name": "Justin_Woods",
@@ -103,7 +131,12 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"lead": "Research and Development",
 		"system": 10,
 		"email": "rnd",
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Steering Designer",
+			"Suspension Designer",
+			"Secretary"
+		]
 	},
 	{
 		"name": "Anthony_Coppola",
@@ -224,7 +257,10 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"manuf": "CNC Machinist",
 		"system": 3,
 		"email": "alathe",
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Manufacturing Manager"
+		]
 	},
 	{
 		"name": "Alan_Richman",
@@ -248,13 +284,22 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"name": "Allison_Moulton",
 		"major": "me",
 		"grad": 20,
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Driveline Integration/Analysis"
+		],
+		"other": [
+			"R&D"
+		]
 	},
 	{
 		"name": "Anna_Gallo",
 		"major": "ee",
 		"grad": 20,
-		"first": 16
+		"first": 16,
+		"prev": [
+			"Electrical Lead"
+		]
 	},
 	{
 		"name": "Asif_Habib",
@@ -263,79 +308,129 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"lead": "Test Systems Lead",
 		"email": "testsystems",
 		"system": 20,
-		"first": 16
+		"first": 16,
+		"prev": [
+			"Vehicle Dynamics Lead",
+			"Suspension Lead"
+		]
 	},
 	{
 		"name": "Caitlin_Barron",
 		"major": "ce",
 		"grad": 20,
-		"first": 17
+		"first": 17, 
+		"other": [
+			"Software Engineer"
+		]
 	},
 	{
 		"name": "Colton_Johnson",
 		"major": "me",
 		"grad": 20,
-		"first": 18
+		"first": 18, 
+		"prev": [
+			"Driveline Integration/Analysis",
+			"Secretary"
+		],
+		"other": [
+			"R&D"
+		]
 	},
 	{
 		"name": "Connor_Blasie",
 		"major": "ee",
 		"grad": 20,
-		"first": 16
+		"first": 16,
+		"prev": [
+			"Test Engineer"
+		]
 	},
 	{
 		"name": "Dani_Worthington",
 		"major": "ASL Interpreting/Mechanical Engineering Technology",
 		"grad": 20,
-		"first": 16
+		"first": 16,
+		"other": [
+			"R&D"
+		]
 	},
 	{
 		"name": "Elizabeth_Harvey",
 		"major": "met",
 		"grad": 20,
-		"first": 16
+		"first": 16, 
+		"prev": [
+			"Treasurer",
+			"Composites Lead"
+		]
 	},
 	{
 		"name": "Erik_Gross",
 		"major": "met",
 		"grad": 20,
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Steering Designer",
+			"Suspension"
+		]
 	},
 	{
 		"name": "Ethan_Spence",
 		"major": "me",
 		"grad": 20,
-		"first": 17
+		"first": 17,
+		"prev": [
+			"Driveline Lead",
+			"Outboard Lead"
+		],
+		"other": [
+			"R&D"
+		]
 	},
 	{
 		"name": "Max_Marchioli",
 		"major": "met",
 		"grad": 20,
-		"first": 16
+		"first": 16,
+		"prev": [
+			"Frame Lead"
+		],
+		"other": [
+			"R&D"
+		]
 	},
 	{
 		"name": "Adam_Case",
 		"major": "met",
 		"grad": 22,
-		"first": 18
+		"first": 18,
+		"other": [
+			"Manual Manufacturing"
+		]
 	},
 	{
 		"name": "Ava_Shortino",
 		"major": "met",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Composites"
+		]
 	},
 	{
 		"name": "Brendan_Leuze",
 		"major": "met",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Frame"
+		]
 	},
 	{
 		"name": "Connor_Orcutt",
 		"major": "me",
 		"grad": 22,
-		"first": 19
+		"first": 19,
 	},
 	{
 		"name": "Evan_Garber",
@@ -347,7 +442,10 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"name": "Graham_Cullen",
 		"major": "met",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Frame"
+		]
 	},
 	{
 		"name": "Hayden_Barbeau",
@@ -359,7 +457,10 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"name": "Jacob_Giuliano",
 		"major": "met",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Suspension"
+		]
 	},
 	{
 		"name": "James_Lucinese",
@@ -371,25 +472,38 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"name": "Jason_Kaye",
 		"major": "me",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Composites"
+		]
 	},
 	{
 		"name": "Matthew_Brogan",
 		"major": "met",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"CVT"
+		]
 	},
 	{
 		"name": "Mike_Borodzik",
 		"major": "me",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Brakes",
+			"Manual Manufacturing"
+		]
 	},
 	{
 		"name": "Natalie_Mantegna",
 		"major": "me",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Reduction"
+		]
 	},
 	{
 		"name": "Pete_VanCamp",
@@ -402,19 +516,28 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"major": "ee",
 		"grad": 22,
 		"display_name": "Rhys D'Souza",
-		"first": 18
+		"first": 18,
+		"other": [
+			"Electrical"
+		]
 	},
 	{
 		"name": "Ryan_Stratton",
 		"major": "met",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Manufacturing"
+		]
 	},
 	{
 		"name": "Victoria_Bellomo",
 		"major": "me",
 		"grad": 23,
-		"first": 19
+		"first": 19,
+		"other": [
+			"Composites"
+		]
 	},
 	{
 		"name": "Zach_Jackson",
