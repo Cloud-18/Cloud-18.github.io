@@ -130,7 +130,7 @@ var team = [ // You do not need to worry about removing members after they gradu
 		"grad": 20,
 		"lead": "Research and Development",
 		"system": 10,
-		"email": "rnd",
+		"email": "research",
 		"first": 17,
 		"prev": [
 			"Steering Designer",
