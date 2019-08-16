@@ -3,9 +3,10 @@ function createNewsTiles() {
         var img = '';
         if (newstile.imageloc != "" && newstile.imageloc != "None")
             img = '<img class="card-img-top" src="' + newstile.imageloc + '" alt="Card image cap">';
+        var ellipses = (newstile.desc.length > 200 ? ' ... ' : '')
         descriptionSnippet = newstile.desc.substring(0, 200);
         return '<div class="card" data-aos="fade-up"><div class="card-header">' + newstile.date + '</div><div class="card-body"><h5 class="card-title"></h5>' + img + 
-        '<p class="card-text">' + descriptionSnippet + ' ... </p><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".readmore' + index + 
+        '<p class="card-text">' + descriptionSnippet + ellipses + '</p><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".readmore' + index + 
         '">Read More</button></div></div>'
     }
     function modaltile(newstile, index) {
