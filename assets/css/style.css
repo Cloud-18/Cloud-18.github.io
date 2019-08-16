@@ -163,7 +163,7 @@ div#main.page{
     position: relative;
 }
 
-div#news.page{
+div#news{
     overflow-x: scroll;
 }
 
@@ -367,6 +367,20 @@ span.dropdown {
     height: 24px;
     background: url(../images/chevron-bottom-sm.png) no-repeat center center;
     float: right;
+}
+
+i#instaIcon {
+    vertical-align: middle;
+}
+
+button#instaIcon {
+    float: right;
+    margin-top: 5px;
+    border-width: 2px;
+}
+
+p#instaIcon {
+    margin-bottom: 0px;
 }
 
 div#about.page {

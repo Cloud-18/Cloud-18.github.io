@@ -32,9 +32,14 @@ function getImgDate(seconds) {
   return months[dateString[1]] + ' ' + getDayString(dateString[2]) + ', ' + dateString[3]
 }
 
+function goToPost(link) {
+    window.open(link, '_blank');
+}
+
 var newstiles = [];
 window.mishaProcessResult = function( data ) {
     for( x in data.data ){
-        newstiles.push({"date": getImgDate(data.data[x].created_time), "imageloc": data.data[x].images.standard_resolution.url, "desc": (data.data[x].caption ? data.data[x].caption.text : 'NO_CAPTION')}); // .text
+        console.log(data.data[x])
+        newstiles.push({"date": getImgDate(data.data[x].created_time), "imageloc": data.data[x].images.standard_resolution.url, "link": data.data[x].link, "desc": (data.data[x].caption ? data.data[x].caption.text : '')});
     }
 }
