@@ -443,7 +443,7 @@ var results = {
             "Hill_Climb": 8,
             "Rock_Crawl": 1,
             "Cost": 36,
-			//"Presentation": 10,
+			"Presentation": 10,
             "Endurance": 6,
             "Overall_Static": 14,
             "Overall_Dynamic": 1,

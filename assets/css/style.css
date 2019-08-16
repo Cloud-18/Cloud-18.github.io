@@ -71,7 +71,7 @@ nav#mynav:not(.bg-white) li a {
 
 .btn-silver {
     color: #fff;
-    background-color: #c0c0c0; // b5b5b5
+    background-color: #c0c0c0; /* b5b5b5 */
     border-color: #c0c0c0;
 }
 

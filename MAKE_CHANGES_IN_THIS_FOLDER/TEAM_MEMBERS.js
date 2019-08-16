@@ -470,7 +470,7 @@ var team = [ // You do not need to worry about removing members after they gradu
 	},
 	{
 		"name": "Jason_Kaye",
-		"major": "me",
+		"major": "met",
 		"grad": 23,
 		"first": 19,
 		"other": [
