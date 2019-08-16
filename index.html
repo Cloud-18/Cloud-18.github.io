@@ -131,6 +131,8 @@
                 </div>
             </div>
         </div>
+        <!-- TODO REMOVE THIS-->
+        <ul id="rudr_instafeed"></ul>
         <div id="results" class="page" data-aos="zoom-out">
             <h1 class="title">Results</h1>
             <div class="container-fluid">
@@ -140,7 +142,7 @@
                             Starting with 4 dynamic events, a design presentation, a cost report, a sales presentation and lastly a
                             4 hour endurance race. Here are the results from the following years: </p>
                     </div>
-                    <div id="showresult" class="col-12 col-md-8" data-aos="fade-up"></div>
+                    <div id="showresult" class="col-12 col-md-8" data-aos="fade-up"></div>console.log(data.data[x])
                 </div>
             </div>
         </div>
@@ -157,7 +159,9 @@
         </div>
         
     </div>
+    <script src="assets/js/instaloader.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://api.instagram.com/v1/users/self/media/recent?access_token=3948397658.b86af4d.e4f1243d875f43309a331a7382ced438&count=20&callback=mishaProcessResult"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
