@@ -95,16 +95,26 @@ $(document).ready(function () {
         Object.keys(results).slice().reverse().forEach(function (year) { $('#results .col-md-4').append('<button type="button" class="btn btn-primary btn-lg m-1" onclick="dispResults(' + year + ');">' + year + '</button>') });
         createSponsorLink();
         $(window).scroll(function () {
-            if (scrolledIntoElement('#about')) {
+			if(scrolledIntoElement('#team') && !scrolledIntoElement('#sponsors')){
+                $('a.nav-link').each(function () {
+                    $(this).removeClass('txt-black');
+                    $(this).addClass('team-fix');
+                });
+			}
+            else if (scrolledIntoElement('#about')) {
                 $('nav#mynav').addClass('bg-white');
+                $('nav#mynav').removeClass('team-fix');
                 $('a.nav-link').each(function () {
                     $(this).addClass('txt-black');
+                    $(this).removeClass('team-fix');
                 });
             }
-            else {
+			else {
                 $('nav#mynav').removeClass('bg-white');
+                $('nav#mynav').removeClass('team-fix');
                 $('a.nav-link').each(function () {
                     $(this).addClass('txt-black');
+                    $(this).removeClass('team-fix');
                 });
             }
         });
@@ -112,19 +122,6 @@ $(document).ready(function () {
             console.log(mobile);
             $("#about").css('padding-bottom', 50 + $("#jumpcar").height());
         }
-    }/* else if (file === 'theteam' || file === 'theteam.html') {
-		console.log(team);
-	}
-    /*if (file == 'thecar.html' || file == 'thecar') {
-        if (!mobile) createPopover();
-        $(window).scroll(function () {
-            if (scrolledPassedElement('#car', 50)) $('nav#mynav a').addClass('txt-white');
-            else $('nav#mynav a').removeClass('txt-white');
-        });
     }
-    console.log('nice');
-    if (file == 'theteam.html' || file == 'theteam') {
-        createTeamTiles();
-    }*/
 });
 

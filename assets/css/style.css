@@ -463,6 +463,15 @@ div.team-hex {
     position: relative;
 }
 
+
+.team-fix {
+	color: #7f7f7f!important;
+}
+
+.team-fix#navbar-team {
+	color: #000!important;
+}
+
 div.team-hex h1.group {
     position: absolute;
     font-style: italic;

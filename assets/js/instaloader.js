@@ -39,7 +39,7 @@ function goToPost(link) {
 var newstiles = [];
 window.mishaProcessResult = function( data ) {
     for( x in data.data ){
-        console.log(data.data[x])
-        newstiles.push({"date": getImgDate(data.data[x].created_time), "imageloc": data.data[x].images.standard_resolution.url, "link": data.data[x].link, "desc": (data.data[x].caption ? data.data[x].caption.text : '')});
+        newstiles.push({"date": getImgDate(data.data[x].created_time), "imageloc": data.data[x].images.standard_resolution.url, "link": data.data[x].link, 
+			"desc": (data.data[x].caption ? data.data[x].caption.text : '')});
     }
 }
