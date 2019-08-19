@@ -1,26 +1,26 @@
 function createTeamTiles(){
 	function majorlookup(major) {
 		switch(major.toLowerCase()) {
-			case 'cive':
-				return 'Civil Engineering Technology';
-			case 'ce':
-				return 'Computer Engineering';
-			case 'cet':
-				return 'Computer Engineering Technology';
-			case 'me':
-				return 'Mechanical Engineering';
 			case 'met':
 				return 'Mechanical Engineering Technology';
+			case 'me':
+				return 'Mechanical Engineering';
 			case 'emet':
 				return 'Electrical Mechanical Engineering Technology';
-			case 'mfet':
-				return 'Manufacturing Engineering Technology';
 			case 'ee':
 				return 'Electrical Engineering';
-			case 'eet':
-				return 'Electrical Engineering Technology';
+			case 'ce':
+				return 'Computer Engineering';
+			case 'cive':
+				return 'Civil Engineering Technology';
+			case 'mfet':
+				return 'Manufacturing Engineering Technology';
 			case 'ie':
 				return 'Industrial Engineering';
+			case 'cet':
+				return 'Computer Engineering Technology';
+			case 'eet':
+				return 'Electrical Engineering Technology';
 			case 'cs':
 				return 'Computer Science';
 			default:
