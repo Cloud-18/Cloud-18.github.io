@@ -1,701 +1,744 @@
 html,
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-a{
-    color: #F26F1E;
+a {
+  color: #f26f1e;
 }
 
 a:hover {
-    color: rgb(167, 77, 22);
+  color: rgb(167, 77, 22);
 }
 
 .block {
-    display: block;
-    margin: 5px 0px;
+  display: block;
+  margin: 5px 0px;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #F26F1E;
-    border-color: #F26F1E;
+  color: #fff;
+  background-color: #f26f1e;
+  border-color: #f26f1e;
 }
 
 .btn-outline-primary {
-    color: #F26F1E;
-    background-color: transparent;
-    background-image: none;
-    border-color: #F26F1E;
+  color: #f26f1e;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f26f1e;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-outline-primary:hover {
-    background-color: #F26F1E !important;
-    border-color: #F26F1E;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-outline-primary:hover {
+  background-color: #f26f1e !important;
+  border-color: #f26f1e;
 }
 .navbar-light .navbar-brand.txt-white,
 .navbar-light .navbar-nav .nav-link.txt-white {
-    color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
-nav#mynav:not(.bg-white) ul{
-    padding: 0 50px;
-    background-color: rgba(0,0,0,0.5);
-    /* border-radius: 20px; */
-    transform: skewX(-10deg);
+nav#mynav:not(.bg-white) ul {
+  padding: 0 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-radius: 20px; */
+  transform: skewX(-10deg);
 }
 
 nav#mynav:not(.bg-white) li {
-    transform: skewX(10deg);
+  transform: skewX(10deg);
 }
 
 nav#mynav:not(.bg-white) li a {
-    color: white;
+  color: white;
 }
 
 .whiteout {
-    color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+a.social-btn {
+  padding: 0px;
+  margin: 1px 2px 1px 2px;
+  font-size: 1em !important;
+  text-shadow: 0px 0px 17px #fff;
+}
+
+a.active-social-btn {
+  color: #7f7f7f !important;
+}
+
+a.social-btn:hover {
+  color: #000 !important;
+}
+
+a.social-btn#fb:hover {
+  text-shadow: 0px 0px 17px #3b5998;
+}
+
+a.social-btn#twitter:hover {
+  text-shadow: 0px 0px 17px #3881f3;
+}
+
+a.social-btn#insta:hover {
+  text-shadow: 0px 0px 17px #e1306c;
 }
 
 .btn-platinum {
-    color: #fff;
-    background-color: #aabcd7;
-    border-color: #aabcd7;
+  color: #fff;
+  background-color: #aabcd7;
+  border-color: #aabcd7;
 }
 
 .btn-gold {
-    color: #fff;
-    background-color: #FFDF00;
-    border-color: #FFDF00;
+  color: #fff;
+  background-color: #ffdf00;
+  border-color: #ffdf00;
 }
 
 .btn-silver {
-    color: #fff;
-    background-color: #c0c0c0; /* b5b5b5 */
-    border-color: #c0c0c0;
+  color: #fff;
+  background-color: #c0c0c0; /* b5b5b5 */
+  border-color: #c0c0c0;
 }
 
 .btn-bronze {
-    color: #fff;
-    background-color: #C9AE5D;
-    border-color: #C9AE5D;
+  color: #fff;
+  background-color: #c9ae5d;
+  border-color: #c9ae5d;
 }
 
 .badge-gold {
-    color: #212529;
-    background-color: #FFDF00;
+  color: #212529;
+  background-color: #ffdf00;
 }
 
 .badge-silver {
-    color: #212529;
-    background-color: #C0C0C0;
+  color: #212529;
+  background-color: #c0c0c0;
 }
 
 .badge-bronze {
-    color: #212529;
-    background-color: #C9AE5D;
+  color: #212529;
+  background-color: #c9ae5d;
 }
 
 span.badge-pill {
-    margin-right:20px;
+  margin-right: 20px;
 }
 
 .empty-badge {
-    padding-left: 75px;
+  padding-left: 75px;
 }
 
-.popover{
-    max-width: 100%; /* Max Width of the popover (depending on the container!) */
+.popover {
+  max-width: 100%; /* Max Width of the popover (depending on the container!) */
 }
 
-
-h1,h2,h3,h4,h5 {
-    font-family: Bebas-neue;
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Bebas-neue;
+  font-weight: bold;
 }
 
 nav {
-    font-weight: bold;
-    font-family: Bebas-neue;
-    font-size: 1.5em;
+  font-weight: bold;
+  font-family: Bebas-neue;
+  font-size: 1.5em;
 }
 
-a.navbar-brand{
-    font-family: Bebas-neue;
-    font-weight: bold;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    font-style: italic;
+a.navbar-brand {
+  font-family: Bebas-neue;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-style: italic;
 }
 
-div.pages{
-    /* overflow-y: auto;
+div.pages {
+  /* overflow-y: auto;
     -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
     -webkit-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     -webkit-scroll-snap-points-y: repeat(100%);
     scroll-snap-points-y: repeat(100%); */
-    position: relative;
+  position: relative;
 }
 
-div.page{
-    min-height: 100vh;
-    width:  100vw;
-    padding: 50px 50px;
-    padding-top: 106px;
-    overflow: hidden;
+div.page {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 50px 50px;
+  padding-top: 106px;
+  overflow: hidden;
 }
 
-div.halfpage{
-    min-height: 50vh;
-    width:  100vw;
-    padding: 50px 50px;
-    padding-top: 106px;
-    overflow: hidden;
+div.halfpage {
+  min-height: 50vh;
+  width: 100vw;
+  padding: 50px 50px;
+  padding-top: 106px;
+  overflow: hidden;
 }
 
-
-
-div#main.page{ 
-    /* background: url(../images/bajacar.jpg) no-repeat center center fixed; */
-    background-size: cover;
-    position: relative;
+div#main.page {
+  /* background: url(../images/bajacar.jpg) no-repeat center center fixed; */
+  background-size: cover;
+  position: relative;
 }
 
-div#news{
-    overflow-x: scroll;
+div#news {
+  overflow-x: scroll;
 }
 
 div#chevrondown {
-    position: absolute;
-    bottom: 50px;
-    left: calc(50% - 12px);
-    background: url(../images/chevron-bottom.png) no-repeat center center ;
-    height: 24px;
-    width: 24px;
-    animation-name: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
-    /* width: 16px; */
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 12px);
+  background: url(../images/chevron-bottom.png) no-repeat center center;
+  height: 24px;
+  width: 24px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  /* width: 16px; */
 }
 
 div#chevrondownwhite {
-    position: absolute;
-    bottom: 15px;
-    left: calc(50% - 12px);
-    background: url(../images/chevron-bottom-white.png) no-repeat center center ;
-    height: 24px;
-    width: 24px;
-    animation-name: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
-    /* width: 16px; */
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 12px);
+  background: url(../images/chevron-bottom-white.png) no-repeat center center;
+  height: 24px;
+  width: 24px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  /* width: 16px; */
 }
 
-div#team.page{
-    background: url(../images/Tile2.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
+div#team.page {
+  background: url(../images/Tile2.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
 }
 
 div.navbar-ghost {
-    height: 56px;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    top: 0%;
-    left: 0%;
+  height: 56px;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 
 div.card-header,
-h5.modal-title  {
-    font-weight: 700;
-    font-family: Bebas-neue;
-    font-size: 1.5em;
-    letter-spacing: 0.05em;
+h5.modal-title {
+  font-weight: 700;
+  font-family: Bebas-neue;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
 }
 
 .d-flex {
-    height: 100px;
+  height: 100px;
 }
 
 div.card {
-    margin: 10px;
-    width: 300px;
+  margin: 10px;
+  width: 300px;
 }
 
 div.modal-body {
-    padding: 30px;
+  padding: 30px;
 }
 
 div#tiles {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: calc(100vh - 120px);
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+img.card-img-top {
+  margin-bottom: 16px;
+}
+
+div.mainbkg,
+div.riotracing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.mainbkg:nth-of-type(1) {
+  background: url(../images/bajacar.jpg) no-repeat center center fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+div.mainbkg:nth-of-type(3) {
+  background: url(../images/bajacartop.png) no-repeat center center fixed;
+  background-size: cover;
+  z-index: 5;
+}
+
+div.riotracing {
+  width: 80%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/riotracing2.png) no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+}
+
+div#car {
+  background: url(../images/testBajaCar.jpg) no-repeat top center;
+  background-size: contain;
+  margin-top: 60px;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+div.partshowcase.page {
+  padding: 0;
+}
+
+div.partshowcase .row {
+  height: 100vh;
+}
+
+div.partshowcase .row div {
+  padding-top: 106px;
+}
+
+div.partshowcase .col-md-8 {
+  background-color: #141414;
+  color: white;
+  -webkit-box-shadow: 11px 0px 39px -8px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 11px 0px 39px -8px rgba(0, 0, 0, 0.73);
+  box-shadow: 11px 0px 39px -8px rgba(0, 0, 0, 0.73);
+}
+
+div.partshowcase .title {
+  text-align: right;
+  letter-spacing: 0.08em;
+  /* font-family: Helvetica-neue; */
+}
+
+div#results button {
+  margin: auto 3px 3px 3px;
+}
+
+div.sponsortier > img {
+  max-width: 30%;
+  margin: 10px;
+}
+
+div.arrow {
+  background: url(../images/chevron-right.png) no-repeat center center;
+  background-size: auto;
+}
+
+div#mteam {
+  min-height: 0px;
+}
+
+div#accordion .card-body,
+.list-group-flush {
+  padding: 0px;
+}
+
+div#accordion .card {
+  width: auto;
+  margin: 10px 0px;
+  margin-left: 90px;
+}
+
+div#showresult img {
+  width: 100%;
+  float: left;
+  margin-bottom: 25px;
+}
+
+#showresult h2 {
+  float: left;
+  /* margin-top: 50px; */
+  font-size: 3em;
+  /* font-style: italic; */
+  font-weight: bold;
+  margin-left: -30px;
+  margin-right: -40px;
+}
+
+#showresult h4 {
+  clear: both;
+  margin-top: 25px;
+}
+
+span.dropdown {
+  width: 10px;
+  height: 24px;
+  background: url(../images/chevron-bottom-sm.png) no-repeat center center;
+  float: right;
+}
+
+i#instaIcon {
+  vertical-align: middle;
+}
+
+button#instaIcon {
+  float: right;
+  margin-top: 5px;
+  border-width: 2px;
+}
+
+p#instaIcon {
+  margin-bottom: 0px;
+}
+
+div#about.page {
+  position: relative;
+}
+
+div#about img {
+  position: absolute;
+  width: 50%;
+  right: 0%;
+  bottom: 0%;
+  /* shape-outside: polygon(50% 9%,56% 26%,57% 42%,61% 46%,61% 54%,60% 57%,99% 81%,99% 99%,84% 99%,82% 93%,68% 91%,62% 88%,61% 81%,65% 68%,54% 62%,12% 61%,5% 58%,5% 49%,8% 43%,8% 36%,10% 36%,13% 32%,19% 29%,23% 11%); */
+  z-index: 0;
+  /* float: right; */
+}
+
+.rotate {
+  transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+div#about .bkgtxt {
+  position: absolute;
+  font-style: italic;
+  /* font-weight: bold; */
+  letter-spacing: 0.1em;
+  color: rgba(20, 20, 20, 0.04);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+p {
+  line-height: 1.75;
+  text-indent: 2em;
+}
+
+div#gallery-hex h1.year {
+  position: fixed;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-style: italic;
+  margin-left: -30px;
+  margin-right: -50px;
+}
+
+div#gallery .col-6 {
+  position: relative;
+  padding: 0;
+}
+div#gallery .col-6 div {
+  width: 100%;
+  height: 100%;
+}
+
+div#gallery .col-6 h2 {
+  position: absolute;
+  color: white;
+  top: 75px;
+  left: 0%;
+  /* width: 100%; */
+  /* text-align: center; */
+  z-index: 0;
+  text-shadow: 0 0 3px #ff0000;
+}
+
+div#gallery .col-6:hover {
+  /* border: 2px solid black; */
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+}
+
+div.team-hex {
+  position: relative;
+}
+
+.team-fix {
+  color: #7f7f7f !important;
+}
+
+.team-fix#navbar-team {
+  color: #000 !important;
+}
+
+div.team-hex h1.group {
+  position: absolute;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-style: italic;
+  left: 25px;
+}
+
+div.team-hex hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  margin: 0% 10vw;
+}
+
+div.team-hex p {
+  text-indent: 0 !important;
+}
+
+div#teammodals img {
+  height: 400px;
+}
+
+div#teammodals .modal-body {
+  padding: 0px !important;
+}
+
+div#teammodals .modal-body div:nth-of-type(2) {
+  padding: 30px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+/* Mobile Go Here */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  div#sponsors.page .container-fluid,
+  div#sponsors.page .container-fluid .row {
+    width: calc(200vw - 100px);
+    padding-right: 30px;
+  }
+
+  div#sponsors.page {
+    overflow: scroll;
+    min-height: 0px;
+  }
+
+  div#sponsors .col-md-4,
+  div#results .col-md-4,
+  div.col-12 {
+    padding: 0px;
+  }
+
+  div#sponsortiers {
+    overflow-y: scroll;
+    max-height: calc(100vh - 100px);
+    border: 1px rgba(180, 180, 180, 0.25) solid;
+    padding: 20px;
+  }
+
+  div#showresult {
+    margin-top: 50px;
+  }
+
+  div#tiles .card:first-child {
+    margin-left: 0px;
+  }
+
+  div#team.page {
+    background: url(../images/Tile2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 70vh;
+  }
+
+  div#about .bkgtxt {
+    top: 0px;
+    left: 0px;
+    width: 105%;
+  }
+
+  div#gallery .col-6 {
+    height: calc(50vh - 102px);
+  }
+}
+/* Desktops Go Here */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  div#tiles {
     display: flex;
     flex-flow: column wrap;
     max-height: calc(100vh - 120px);
     align-items: flex-start;
     align-content: flex-start;
-}
+    width: inherit;
+  }
 
-img.card-img-top {
-    margin-bottom:16px;
-}
+  div.card {
+    margin: 10px;
+    flex: 0 4 auto;
+    width: 400px;
+  }
 
-div.mainbkg,
-div.riotracing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
+  div.verti {
+    height: calc(100vh - 156px);
+    width: 10px;
+  }
 
-div.mainbkg:nth-of-type(1) {
-    background: url(../images/bajacar.jpg) no-repeat center center fixed;
-    background-size: cover;
-    z-index: 0;
-}
-
-div.mainbkg:nth-of-type(3) {
-    background: url(../images/bajacartop.png) no-repeat center center fixed;
-    background-size: cover;
-    z-index: 5;
-}
-
-div.riotracing {
-    width: 80%;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../images/riotracing2.png) no-repeat center center ;
-    background-size: contain;
-    z-index: 1;
-}
-
-div#car {
-    background: url(../images/testBajaCar.jpg) no-repeat top center;
-    background-size: contain;
-    margin-top: 60px;
-    width: 100vw;
+  div#sponsors div.row {
     height: 100%;
-    position: relative;
-}
+  }
 
-div.partshowcase.page {
-    padding: 0;
-}
+  div#sponsors div.row .col-4 {
+    border-right: 2px gray solid;
+  }
 
-div.partshowcase .row{
-    height: 100vh;
-}
+  div#team h1 {
+    margin: 0;
+  }
 
-div.partshowcase .row div {
-    padding-top: 106px;
-}
+  div#team div.card {
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    width: 300px;
+  }
 
-div.partshowcase .col-md-8{
-    background-color: #141414;
-    color: white;
-    -webkit-box-shadow: 11px 0px 39px -8px rgba(0,0,0,0.73);
-    -moz-box-shadow: 11px 0px 39px -8px rgba(0,0,0,0.73);
-    box-shadow: 11px 0px 39px -8px rgba(0,0,0,0.73);
-}
+  div#team div.card-header {
+    padding-bottom: 2px;
+  }
 
-div.partshowcase .title{ 
-    text-align: right;
-    letter-spacing: 0.08em;
-    /* font-family: Helvetica-neue; */
+  div.carpopover {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  div.carpopover img {
+    width: 100px;
+  }
 
-}
+  h3.popover-header {
+    font-size: 2em;
+  }
 
-div#results button {
-    margin: auto 3px 3px 3px;
-}
+  div.carpopover div.popovercontent {
+    width: 100%;
+  }
+  div.carpopover div.popovercontent p:first-of-type {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  div.carpopover div.popovercontent p:nth-of-type(2) {
+    margin: 0 10px;
+  }
 
-div.sponsortier > img {
+  div.carpart {
+    position: absolute;
+    min-height: 30px;
+    min-width: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px white solid;
+  }
+
+  div#sponsortiers {
+    overflow-y: scroll;
+    max-height: calc(100vh - 156px);
+    border-left: 1px rgba(180, 180, 180, 0.5) solid;
+  }
+
+  div#sponsortiers div.sponsortier {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  div.sponsortier > img {
     max-width: 30%;
     margin: 10px;
-}
+  }
 
-div.arrow {
-    background: url(../images/chevron-right.png) no-repeat center center;
-    background-size: auto;
-}
-
-div#mteam {
-    min-height: 0px;
-}
-
-div#accordion .card-body, 
-.list-group-flush{
-    padding: 0px;
-}
-
-div#accordion .card {
-    width: auto;
-    margin: 10px 0px;
-    margin-left: 90px;
-}
-
-div#showresult img {
+  div.sponsortier h3 {
     width: 100%;
-    float: left;
-    margin-bottom: 25px;
-}
+  }
 
-#showresult h2 {
-    float: left;
-    /* margin-top: 50px; */
-    font-size: 3em;
-    /* font-style: italic; */
-    font-weight: bold;
-    margin-left: -30px;
-    margin-right: -40px;
-}
+  div#accordion {
+    max-width: 500px;
+  }
 
-#showresult h4 {
-    clear: both;
-    margin-top: 25px;
-}
+  div#showresult img {
+    width: 75%;
+  }
 
+  div#about .bkgtxt {
+    top: 0px;
+    left: 0px;
+    width: 105%;
+  }
 
+  div.modal-body {
+    padding: 50px;
+  }
 
-span.dropdown {
-    width: 10px;
-    height: 24px;
-    background: url(../images/chevron-bottom-sm.png) no-repeat center center;
-    float: right;
-}
-
-i#instaIcon {
-    vertical-align: middle;
-}
-
-button#instaIcon {
-    float: right;
-    margin-top: 5px;
-    border-width: 2px;
-}
-
-p#instaIcon {
-    margin-bottom: 0px;
-}
-
-div#about.page {
-    position: relative;
-}
-
-div#about img {
-    position: absolute;
-    width: 50%;
-    right: 0%;
-    bottom: 0%;
-    /* shape-outside: polygon(50% 9%,56% 26%,57% 42%,61% 46%,61% 54%,60% 57%,99% 81%,99% 99%,84% 99%,82% 93%,68% 91%,62% 88%,61% 81%,65% 68%,54% 62%,12% 61%,5% 58%,5% 49%,8% 43%,8% 36%,10% 36%,13% 32%,19% 29%,23% 11%); */
-    z-index: 0;
-    /* float: right; */
-}
-
-.rotate {
-    transform-origin: top left;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
-}
-
-div#about .bkgtxt {
-    position: absolute;
-    font-style: italic;
-    /* font-weight: bold; */
-    letter-spacing: 0.1em;
-    color: rgba(20,20,20,0.04);
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
-p {
-    line-height: 1.75;
-    text-indent: 2em;
-}
-
-div#gallery-hex h1.year {
-    position: fixed;
-    font-style: italic;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    font-style: italic;
-    margin-left: -30px;
-    margin-right: -50px;
-}
-
-div#gallery .col-6 {
-    position: relative;
-    padding: 0;
-}
-div#gallery .col-6 div{
-    width: 100%;
-    height: 100%;
-}
-
-div#gallery .col-6 h2{
-    position: absolute;
-    color: white;
-    Top: 75px;
-    left: 0%;
-    /* width: 100%; */
-    /* text-align: center; */
-    z-index: 0;
-    text-shadow: 0 0 3px #FF0000;
-}
-
-div#gallery .col-6:hover {
-    /* border: 2px solid black; */
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.19);
-    z-index: 2;
-}
-
-div.team-hex {
-    position: relative;
-}
-
-
-.team-fix {
-	color: #7f7f7f!important;
-}
-
-.team-fix#navbar-team {
-	color: #000!important;
-}
-
-div.team-hex h1.group {
-    position: absolute;
-    font-style: italic;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    font-style: italic;
-    left: 25px;
-}
-
-div.team-hex hr {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80vw;
-    margin: 0% 10vw;
-}
-
-div.team-hex p {
-    text-indent: 0!important;
-}
-
-div#teammodals img{
-    height: 400px;
-}
-
-div#teammodals .modal-body{
-    padding: 0px!important;
-}
-
-div#teammodals .modal-body div:nth-of-type(2){
-    padding:30px;
-}
-
-@keyframes pulse {
-    0%   {opacity: 1; transform: translateY(-20px); }
-    25%  {opacity: 0.5; transform: translateY(-5px);}
-    50%  {opacity: 0.25;}
-    75%  {opacity: 0.5; transform: translateY(-5px);}
-    100% {opacity: 1; transform: translateY(-20px);}
-}
-/* Mobile Go Here */
-@media (max-width: 768px) {
-    .desktop-only {
-        display: none;
-    }
-
-    div#sponsors.page .container-fluid, div#sponsors.page .container-fluid .row{
-        width: calc(200vw - 100px);
-        padding-right:30px;
-    }
-
-    div#sponsors.page {
-        overflow: scroll;
-        min-height: 0px;
-    }
-
-    div#sponsors .col-md-4,
-    div#results .col-md-4,
-    div.col-12 {
-        padding: 0px;
-    }
-
-    div#sponsortiers {
-        overflow-y: scroll;
-        max-height: calc(100vh - 100px);
-        border: 1px rgba(180, 180, 180, 0.25) solid;
-        padding: 20px;
-    }
-
-    div#showresult {
-        margin-top: 50px;
-    }
-
-    div#tiles .card:first-child {
-        margin-left:0px;
-    }
-
-    div#team.page {
-        background: url(../images/Tile2.jpg) no-repeat center center fixed;
-        background-size: cover;
-        min-height: 70vh;
-    }
-
-    div#about .bkgtxt {
-        top: 0px;
-        left: 0px;
-        width: 105%;
-    }
-
-    div#gallery .col-6 {
-        height: calc(50vh - 102px);
-    }
-}
-/* Desktops Go Here */
-@media (min-width: 768px) {
-    .mobile-only {
-        display: none;
-    }
-
-    div#tiles {
-        display: flex;
-        flex-flow: column wrap;
-        max-height: calc(100vh - 120px);
-        align-items: flex-start;
-        align-content: flex-start;
-        width: inherit;
-    }
-
-    div.card {
-        margin: 10px;
-        flex: 0 4 auto;
-        width: 400px;
-    }
-
-    div.verti {
-        height: calc(100vh - 156px);
-        width: 10px;
-    }
-
-    div#sponsors div.row {
-        height: 100%;
-    }
-
-    div#sponsors div.row .col-4 {
-        border-right: 2px gray solid;
-    }   
-
-    div#team h1 {
-        margin: 0;
-    }
-    
-    div#team div.card {
-        position: absolute;
-        bottom: 10vh;
-        right: 10vw;
-        width: 300px;
-    }
-    
-    div#team div.card-header {
-        padding-bottom: 2px;
-    }
-
-    div.carpopover {
-        width: 300px;
-        height: 200px;
-        display: flex;
-        align-items: flex-start;
-        align-content: flex-start;
-    }
-    div.carpopover img {
-        width: 100px;
-    }
-
-    h3.popover-header {
-        font-size: 2em;
-    }
-    
-    div.carpopover div.popovercontent {
-        width: 100%;
-    }
-    div.carpopover div.popovercontent p:first-of-type{
-        text-align: center;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        font-size: 1.1em;
-        margin-bottom: 10px;
-    }
-    div.carpopover div.popovercontent p:nth-of-type(2){
-        margin: 0 10px;
-    }
-    
-    div.carpart {
-        position: absolute;
-        min-height: 30px;
-        min-width: 30px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border: 1px white solid;
-    }
-
-    div#sponsortiers {
-        overflow-y: scroll;
-        max-height: calc(100vh - 156px);
-        border-left: 1px rgba(180, 180, 180, 0.5) solid;
-    }
-
-    div#sponsortiers div.sponsortier {
-        display: flex;
-        flex-flow: wrap;
-        align-items: flex-start;
-        align-content: flex-start;
-    }
-
-    div.sponsortier > img {
-        max-width: 30%;
-        margin: 10px;
-    }
-
-    div.sponsortier h3 {
-        width: 100%;
-    }
-    
-    div#accordion {
-        max-width: 500px;
-    }
-
-    div#showresult img {
-        width: 75%;
-    }
-
-
-
-    div#about .bkgtxt {
-        top: 0px;
-        left: 0px;
-        width: 105%;
-    }
-
-    div.modal-body {
-        padding: 50px;
-    }
-    
-    div.modal-body p{
-        line-height: 1.5;
-    }
-    div#gallery .col-6 {
-        height: calc(100vh - 204px);
-    }
+  div.modal-body p {
+    line-height: 1.5;
+  }
+  div#gallery .col-6 {
+    height: calc(100vh - 204px);
+  }
 }
