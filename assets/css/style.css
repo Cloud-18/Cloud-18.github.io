@@ -88,6 +88,10 @@ a.social-btn#insta:hover {
   text-shadow: 0px 0px 17px #e1306c;
 }
 
+a.social-btn#yout:hover {
+  text-shadow: 0px 0px 17px #c4302b;
+}
+
 .btn-platinum {
   color: #fff;
   background-color: #aabcd7;
