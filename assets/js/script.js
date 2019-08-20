@@ -111,7 +111,10 @@ $(document).ready(function() {
       });
     createSponsorLink();
     $(window).scroll(function() {
-      if (scrolledIntoElement("#team") && !scrolledIntoElement("#sponsors")) {
+      if (
+        scrolledIntoElement("#team") &&
+        !scrolledIntoElement("#sponsorship")
+      ) {
         $("a.nav-link").each(function() {
           $(this).removeClass("txt-black");
           $(this).addClass("team-fix");
