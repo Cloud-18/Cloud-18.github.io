@@ -83,20 +83,36 @@ function fixNewsTiles() {
     $(this).css("min-height", "auto");
     i++;
   });
-  if (screen.height < 1000) {
-    $("div.page#news").css("min-height", "116.25vh");
+  if (screen.height <= 768 || (screen.height <= 864 && screen.width >= 864)) {
+    if (
+      screen.width >= 320 &&
+      screen.width <= 375 &&
+      screen.height >= 568 &&
+      screen.height <= 667
+    ) {
+      $("div.page#news").css("min-height", "150vh");
+    } else {
+      $("div.page#news").css("min-height", "116.25vh");
+    }
     $("div.page#news").css("max-height", "none");
     newsMax -= newsBuffer;
     i = 0;
     $("div#newsTile").each(function() {
+      var numDivisions = screen.height > 768 && screen.height <= 900 ? 4.5 : 8;
       if (newstiles[i].height >= newsMax) {
         var buffer = Math.ceil(
-          (newstiles[i].height - newsMax) / (newsBuffer / 8) + 82
+          (newstiles[i].height - newsMax) / (newsBuffer / numDivisions) + 82
         );
         $(this).css("min-height", buffer.toString() + "vh");
       }
       i++;
     });
+  } else if (screen.height <= 864 && screen.width < screen.height) {
+    $("div.page#news").css("min-height", "82vh");
+    $("div.page#news").css("max-height", "107vh");
+  } else if (screen.height <= 900 && screen.height < screen.width) {
+    $("div.page#news").css("min-height", "85vh");
+    $("div.page#news").css("max-height", "105vh");
   } else {
     $("div.page#news").css("min-height", "75vh");
     $("div.page#news").css("max-height", "95vh");

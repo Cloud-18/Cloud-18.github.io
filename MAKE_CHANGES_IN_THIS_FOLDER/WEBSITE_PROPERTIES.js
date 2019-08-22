@@ -5,4 +5,4 @@ const eboard_positions = [
   "Treasurer",
   "Secretary"
 ]; // Only touch these if they are actually changed
-const newsBuffer = 70;
+var newsBuffer = 72;
