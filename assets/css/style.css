@@ -88,22 +88,6 @@ a.social-btn:hover {
   color: #000 !important;
 }
 
-a.social-btn#fb:hover {
-  text-shadow: 0px 0px 17px #3b5998;
-}
-
-a.social-btn#twitter:hover {
-  text-shadow: 0px 0px 17px #3881f3;
-}
-
-a.social-btn#insta:hover {
-  text-shadow: 0px 0px 17px #e1306c;
-}
-
-a.social-btn#yout:hover {
-  text-shadow: 0px 0px 17px #c4302b;
-}
-
 .btn-platinum {
   color: #fff;
   background-color: #aabcd7;
@@ -579,6 +563,10 @@ div#teammodals .modal-body div:nth-of-type(2) {
     display: none;
   }
 
+  i#mike3 {
+    color: red !important;
+  }
+
   div#sponsorship.page .container-fluid,
   div#sponsorship.page .container-fluid .row {
     width: calc(200vw - 100px);
@@ -641,9 +629,25 @@ div#teammodals .modal-body div:nth-of-type(2) {
   }
 }
 /* Desktops Go Here */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mobile-only {
     display: none;
+  }
+
+  a.social-btn#fb:hover {
+    text-shadow: 0px 0px 17px #3b5998;
+  }
+
+  a.social-btn#twitter:hover {
+    text-shadow: 0px 0px 17px #3881f3;
+  }
+
+  a.social-btn#insta:hover {
+    text-shadow: 0px 0px 17px #e1306c;
+  }
+
+  a.social-btn#yout:hover {
+    text-shadow: 0px 0px 17px #c4302b;
   }
 
   div#tiles {
@@ -783,4 +787,11 @@ div#teammodals .modal-body div:nth-of-type(2) {
   div#gallery .col-6 {
     height: calc(100vh - 204px);
   }
+}
+
+/*Fix news display for small screens*/
+@media (max-height: 768px) {
+  /*div.page#news {
+    min-height: 1160vh !important;
+  }*/
 }

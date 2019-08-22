@@ -14,6 +14,7 @@ if (
 var currentpage = 0;
 var scrollpositions = [];
 var scrolllock = false;
+var i = 0;
 
 // pages = ["#about", "#news", "#team"];
 var galleryYears = [2018, 2017, 2016, 2015];
@@ -62,7 +63,7 @@ function inarow(delta) {
     consecutivedown = 0;
     consecutiveup++;
   }
-  console.log(consecutivedown, consecutiveup);
+  //console.log(consecutivedown, consecutiveup);
   if (consecutivedown == margin) {
     consecutivedown = 0;
     return -1;
@@ -74,22 +75,87 @@ function inarow(delta) {
   return 0;
 }
 
+function fixNewsTiles() {
+  var newsMax = 0;
+  i = 0;
+  $("div#newsTile").each(function() {
+    newsMax = Math.max(newsMax, newstiles[i].height);
+    $(this).css("min-height", "auto");
+    i++;
+  });
+  if (screen.height < 1000) {
+    $("div.page#news").css("min-height", "116.25vh");
+    $("div.page#news").css("max-height", "none");
+    newsMax -= newsBuffer;
+    i = 0;
+    $("div#newsTile").each(function() {
+      if (newstiles[i].height >= newsMax) {
+        var buffer = Math.ceil(
+          (newstiles[i].height - newsMax) / (newsBuffer / 8) + 82
+        );
+        $(this).css("min-height", buffer.toString() + "vh");
+      }
+      i++;
+    });
+  } else {
+    $("div.page#news").css("min-height", "75vh");
+    $("div.page#news").css("max-height", "95vh");
+  }
+}
+
 function createGalleries() {}
+
+function scrollAction() {
+  if (scrolledIntoElement("#team") && !scrolledIntoElement("#sponsorship")) {
+    $("a.nav-link").each(function() {
+      $(this).removeClass("txt-black");
+      $(this).addClass("team-fix");
+    });
+    $("a.social-btn").each(function() {
+      $(this).addClass("active-social-btn");
+    });
+    $("#social-background").removeClass("social-btn");
+  } else if (scrolledIntoElement("#about")) {
+    $("nav#mynav").addClass("bg-white");
+    $("nav#mynav").removeClass("team-fix");
+    $("a.nav-link").each(function() {
+      $(this).addClass("txt-black");
+      $(this).removeClass("team-fix");
+    });
+    $("a.social-btn").each(function() {
+      $(this).addClass("active-social-btn");
+    });
+    $("#social-background").removeClass("social-btn");
+  } else {
+    $("nav#mynav").removeClass("bg-white");
+    $("nav#mynav").removeClass("team-fix");
+    $("a.nav-link").each(function() {
+      $(this).addClass("txt-black");
+      $(this).removeClass("team-fix");
+    });
+    $("a.social-btn").each(function() {
+      $(this).removeClass("active-social-btn");
+    });
+    $("#social-background").addClass("social-btn");
+  }
+}
 
 var bkgtxt =
   '<p class="bkgtxt">RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING RIOT RACING </p>';
 
+var file = "";
+
 if (!mobile) {
-  console.log("Setting Width");
+  //console.log("Setting Width");
   $("#navbarNav").css("margin-right", $("a.navbar-brand").width() - 100);
 }
 
 $(document).ready(function() {
   $(".page").each(function() {
     scrollpositions.push($(this).offset().top);
-    console.log(scrollpositions);
+    //console.log(scrollpositions);
   });
-  var file = window.document.location.href.split("/");
+  file = window.document.location.href.split("/");
   file = file[file.length - 1].split("#");
   file = file[0];
   if (file == "index.html" || file == "" || file == "Bajasite") {
@@ -110,46 +176,21 @@ $(document).ready(function() {
         );
       });
     createSponsorLink();
-    $(window).scroll(function() {
-      if (
-        scrolledIntoElement("#team") &&
-        !scrolledIntoElement("#sponsorship")
-      ) {
-        $("a.nav-link").each(function() {
-          $(this).removeClass("txt-black");
-          $(this).addClass("team-fix");
-        });
-        $("a.social-btn").each(function() {
-          $(this).addClass("active-social-btn");
-        });
-        $("#social-background").removeClass("social-btn");
-      } else if (scrolledIntoElement("#about")) {
-        $("nav#mynav").addClass("bg-white");
-        $("nav#mynav").removeClass("team-fix");
-        $("a.nav-link").each(function() {
-          $(this).addClass("txt-black");
-          $(this).removeClass("team-fix");
-        });
-        $("a.social-btn").each(function() {
-          $(this).addClass("active-social-btn");
-        });
-        $("#social-background").removeClass("social-btn");
-      } else {
-        $("nav#mynav").removeClass("bg-white");
-        $("nav#mynav").removeClass("team-fix");
-        $("a.nav-link").each(function() {
-          $(this).addClass("txt-black");
-          $(this).removeClass("team-fix");
-        });
-        $("a.social-btn").each(function() {
-          $(this).removeClass("active-social-btn");
-        });
-        $("#social-background").addClass("social-btn");
-      }
-    });
+    $(window).scroll(scrollAction);
+    $(window).resize(fixNewsTiles);
     if (mobile) {
-      console.log(mobile);
+      //console.log(mobile);
       $("#about").css("padding-bottom", 50 + $("#jumpcar").height());
     }
+    i = 0;
+    $("div#newsTile").each(function() {
+      newstiles[i].height =
+        $(this)
+          .find("p")
+          .height() + newstiles[i].height;
+      i++;
+    });
+    fixNewsTiles();
+    scrollAction();
   }
 });
