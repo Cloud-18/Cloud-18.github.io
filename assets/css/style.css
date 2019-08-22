@@ -349,6 +349,10 @@ div#results button {
   margin: auto 3px 3px 3px;
 }
 
+div#showresult h2 {
+    position: absolute;
+} 
+
 div.sponsortier > img {
   max-width: 30%;
   margin: 10px;
@@ -371,7 +375,6 @@ div#accordion .card-body,
 div#accordion .card {
   width: auto;
   margin: 10px 0px;
-  margin-left: 90px;
 }
 
 div#showresult img {
@@ -588,8 +591,16 @@ div#teammodals .modal-body div:nth-of-type(2) {
     padding: 20px;
   }
 
+  div#accordian .card {
+    margin-left: 30px;
+  }
+
   div#showresult {
     margin-top: 50px;
+  }
+
+  div#showresult img {
+    margin-left: 40px;
   }
 
   div#tiles .card:first-child {
@@ -725,8 +736,13 @@ div#teammodals .modal-body div:nth-of-type(2) {
     max-width: 500px;
   }
 
+  div#accordion .card {
+    margin-left: 90px!important;
+  }
+
   div#showresult img {
     width: 75%;
+    margin-left: 90px;
   }
 
   div#about .bkgtxt {
