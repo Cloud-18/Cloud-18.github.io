@@ -788,10 +788,3 @@ div#teammodals .modal-body div:nth-of-type(2) {
     height: calc(100vh - 204px);
   }
 }
-
-/*Fix news display for small screens*/
-@media (max-height: 768px) {
-  /*div.page#news {
-    min-height: 1160vh !important;
-  }*/
-}
