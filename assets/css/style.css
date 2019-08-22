@@ -564,18 +564,18 @@ div#teammodals .modal-body div:nth-of-type(2) {
     display: none;
   }
 
-  div#sponsors.page .container-fluid,
-  div#sponsors.page .container-fluid .row {
+  div#sponsorship.page .container-fluid,
+  div#sponsorship.page .container-fluid .row {
     width: calc(200vw - 100px);
     padding-right: 30px;
   }
 
-  div#sponsors.page {
+  div#sponsorship.page {
     overflow: scroll;
     min-height: 0px;
   }
 
-  div#sponsors .col-md-4,
+  div#sponsorship .col-md-4,
   div#results .col-md-4,
   div.col-12 {
     padding: 0px;
@@ -638,11 +638,11 @@ div#teammodals .modal-body div:nth-of-type(2) {
     width: 10px;
   }
 
-  div#sponsors div.row {
+  div#sponsorship div.row {
     height: 100%;
   }
 
-  div#sponsors div.row .col-4 {
+  div#sponsorship div.row .col-4 {
     border-right: 2px gray solid;
   }
 
