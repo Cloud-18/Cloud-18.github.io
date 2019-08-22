@@ -4,7 +4,7 @@ var results = {
         "car": {
             "name": "r19",
             "weight": "215",
-            "imgloc": 'assets/images/team/alex_smart.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Tennessee", "California", "Rochester"],
         "races": [
@@ -189,7 +189,7 @@ var results = {
         "car": {
             "name": "r15",
             "weight": "215",
-            "imgloc": 'assets/images/team/justin_neves.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Auburn", "Maryland", "Oregon"],
         "races": [{
@@ -235,7 +235,7 @@ var results = {
         "car": {
             "name": "r14",
             "weight": "215",
-            "imgloc": 'assets/images/team/alan_richman.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["UTEP", "Kansas", "Illinois"],
         "races": [{
@@ -281,7 +281,7 @@ var results = {
         "car": {
             "name": "r13",
             "weight": "215",
-            "imgloc": 'assets/images/team/rhys_dsouza.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Tennessee", "Washington", "Rochester"],
         "races": [{
@@ -324,7 +324,7 @@ var results = {
         "car": {
             "name": "2nd Diff. Car",
             "weight": "215",
-            "imgloc": 'assets/images/team/erica_neese.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Auburn", "Wisconsin", "Oregon"],
         "races": [{
@@ -367,7 +367,7 @@ var results = {
         "car": {
             "name": "1st Diff. Car",
             "weight": "215",
-            "imgloc": 'assets/images/team/ethan_yaro.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Birmingham", "Illinois", "Kansas"],
         "races": [{
@@ -410,7 +410,7 @@ var results = {
         "car": {
             "name": "Semi-trailing",
             "weight": "215",
-            "imgloc": 'assets/images/team/kyle_mellendorf.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Carolina", "Rochester", "Washington"],
         "races": [{
@@ -455,7 +455,7 @@ var results = {
         "car": {
             "name": "J-Arm",
             "weight": "215",
-            "imgloc": 'assets/images/team/david_jones.jpg'
+            "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Alabama", "Oregon", "Wisconsin"],
         "races": [{
