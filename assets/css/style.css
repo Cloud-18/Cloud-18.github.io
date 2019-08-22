@@ -49,6 +49,18 @@ nav#mynav:not(.bg-white) ul {
   transform: skewX(-10deg);
 }
 
+i#mike1 {
+  color: gold;
+}
+
+i#mike2 {
+  color: silver;
+}
+
+i#mike3 {
+  color: #cd7f32;
+}
+
 nav#mynav:not(.bg-white) li {
   transform: skewX(10deg);
 }
@@ -350,8 +362,8 @@ div#results button {
 }
 
 div#showresult h2 {
-    position: absolute;
-} 
+  position: absolute;
+}
 
 div.sponsortier > img {
   max-width: 30%;
@@ -592,7 +604,7 @@ div#teammodals .modal-body div:nth-of-type(2) {
   }
 
   div.card {
-    margin-left: 40px!important;
+    margin-left: 40px !important;
   }
 
   h3.mike {
@@ -742,7 +754,7 @@ div#teammodals .modal-body div:nth-of-type(2) {
   }
 
   div#accordion .card {
-    margin-left: 90px!important;
+    margin-left: 90px !important;
   }
 
   h3.mike {
