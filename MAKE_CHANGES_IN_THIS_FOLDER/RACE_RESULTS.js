@@ -3,8 +3,7 @@ var results = {
         "mike": 3,
         "car": {
             "name": "r19",
-            "weight": "215",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/r19.jpg'
         },
         "racetitles": ["Tennessee", "California", "Rochester"],
         "races": [
@@ -51,7 +50,6 @@ var results = {
         "mike": 1,
         "car": {
             "name": "r18",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Maryland", "Kansas", "Oregon"],
@@ -99,7 +97,6 @@ var results = {
         "mike": 3,
         "car": {
             "name": "r17",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r17.jpg'
         },
         "racetitles": ["California", "Kansas", "Illinois"],
@@ -142,7 +139,6 @@ var results = {
         "mike": 2,
         "car": {
             "name": "r16",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r16.jpg'
         },
         "racetitles": ["Tennessee", "California", "Rochester"],
@@ -188,8 +184,7 @@ var results = {
         "mike": 0,
         "car": {
             "name": "r15",
-            "weight": "215",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/r15.jpg'
         },
         "racetitles": ["Auburn", "Maryland", "Oregon"],
         "races": [{
@@ -234,7 +229,6 @@ var results = {
         "mike": 3,
         "car": {
             "name": "r14",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["UTEP", "Kansas", "Illinois"],
@@ -280,7 +274,6 @@ var results = {
         "mike": 0,
         "car": {
             "name": "r13",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Tennessee", "Washington", "Rochester"],
@@ -323,7 +316,6 @@ var results = {
         "mike": 2,
         "car": {
             "name": "2nd Diff. Car",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Auburn", "Wisconsin", "Oregon"],
@@ -366,7 +358,6 @@ var results = {
         "mike": 0,
         "car": {
             "name": "1st Diff. Car",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Birmingham", "Illinois", "Kansas"],
@@ -409,7 +400,6 @@ var results = {
         "mike": 0,
         "car": {
             "name": "Semi-trailing",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Carolina", "Rochester", "Washington"],
@@ -454,7 +444,6 @@ var results = {
         "mike": 2,
         "car": {
             "name": "J-Arm",
-            "weight": "215",
             "imgloc": 'assets/images/cars/r18.jpg'
         },
         "racetitles": ["Alabama", "Oregon", "Wisconsin"],

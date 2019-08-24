@@ -21,7 +21,6 @@ var team = [
     major: "ie",
     grad: 20,
     eboard: "Team Manager",
-    snippet: "I love this team!",
     first: 17,
     prev: ["Composites Lead"]
   },
@@ -34,11 +33,7 @@ var team = [
     other: [
       "Suspension Test Engineer",
       "Web Developer"
-    ] /*,
-		"prev": [
-			"Frame",
-			"Treasurer"
-		]*/
+    ]
   },
   {
     name: "Justin_Neves",
@@ -121,7 +116,7 @@ var team = [
     system: 10,
     email: "research",
     first: 17,
-    prev: ["Steering Designer", "Suspension Designer", "Secretary"]
+    prev: ["Steering/Suspension Designer", "Secretary"]
   },
   {
     name: "Anthony_Coppola",
@@ -213,7 +208,7 @@ var team = [
     grad: 22,
     designer: "Driveline Integration/Engines",
     system: 12,
-    email: "engines",
+    email: "engine",
     display_name: "E. Nicholas Harter",
     first: 19
   },
