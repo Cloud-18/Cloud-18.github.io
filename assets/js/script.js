@@ -114,8 +114,8 @@ function fixNewsTiles() {
     $("div.page#news").css("min-height", "85vh");
     $("div.page#news").css("max-height", "105vh");
   } else {
-    $("div.page#news").css("min-height", "75vh");
-    $("div.page#news").css("max-height", "95vh");
+    $("div.page#news").css("min-height", "80vh");
+    $("div.page#news").css("max-height", "97vh");
   }
 }
 
