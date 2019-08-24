@@ -19,6 +19,12 @@ var i = 0;
 // pages = ["#about", "#news", "#team"];
 var galleryYears = [2018, 2017, 2016, 2015];
 
+function closeNav() {
+  if(mobile) {
+    $('span.navbar-toggler-icon').click()
+  }
+}
+
 function isScrolledIntoView(elem) {
   var offset = 0;
   var docViewTop = $(window).scrollTop();

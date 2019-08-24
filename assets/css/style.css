@@ -563,10 +563,6 @@ div#teammodals .modal-body div:nth-of-type(2) {
     display: none;
   }
 
-  i#mike3 {
-    color: red !important;
-  }
-
   div#sponsorship.page .container-fluid,
   div#sponsorship.page .container-fluid .row {
     width: calc(200vw - 100px);
