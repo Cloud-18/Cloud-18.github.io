@@ -21,8 +21,9 @@ var galleryYears = [2018, 2017, 2016, 2015];
 
 function closeNav() {
   if(mobile) {
-    $('span.navbar-toggler-icon').click()
+    $('span.navbar-toggler-icon').click();
   }
+  scrollAction();
 }
 
 function isScrolledIntoView(elem) {
