@@ -149,11 +149,11 @@ function scrollAction() {
   }
 }
 
-function adjustNavbar(teamPage) {
+function adjustNavbar(homePage) {
   if (!$("#navbarNav").is(":visible")) {
     $("nav#mynav").addClass("bg-white");
     $("nav#mynav").addClass("bgR");
-  } else if (teamPage || !scrolledIntoElement("#about")) {
+  } else if (!scrolledIntoElement("#about") || !homePage) {
     for (var i = 1; i <= 256; i += 5) {
       let x = (1 / 255) * (256 - i);
       setTimeout(function() {
