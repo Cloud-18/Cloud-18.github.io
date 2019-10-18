@@ -20,8 +20,8 @@ var i = 0;
 var galleryYears = [2018, 2017, 2016, 2015];
 
 function closeNav() {
-  if(mobile) {
-    $('span.navbar-toggler-icon').click();
+  if (mobile) {
+    $("span.navbar-toggler-icon").click();
   }
   scrollAction();
 }
@@ -84,16 +84,31 @@ function inarow(delta) {
 
 function fixNewsTiles() {
   var newsMax = 0;
-  document.querySelectorAll('div#newsTileBody').forEach(tile => {
-    newsMax = Math.max(newsMax, tile.clientHeight)
-  })
-  $("div#newsTileBody").each(function() {
-    $(this).css("height", newsMax)
-  })
+  document.querySelectorAll("div#newsTileBody").forEach(tile => {
+    newsMax = Math.max(newsMax, tile.clientHeight);
+  });
+  let headerHeight = document.querySelector("div#newsHead").clientHeight;
+  let footerHeight = document.querySelector("div#newsFoot").clientHeight;
 
-  var newsHeight = newsMax + $('div#newsHead').height() + $('div#newsFoot').height() + $("div#news>h1").height() + 200
-  $('div.page#news').css('max-height', newsHeight)
-  $('div.page#news').css('min-height', newsHeight)
+  document.querySelectorAll("div#newsTileBody").forEach(tile => {
+    tile.style["min-height"] = newsMax + "px";
+    tile.style["max-height"] = newsMax + "px";
+    tile.style.height = newsMax + "px";
+  });
+
+  var newsHeight =
+    newsMax + headerHeight + footerHeight + $("div#news>h1").height() + 200;
+  let newsPage = $("div.page#news");
+  newsPage.css("max-height", newsHeight);
+  newsPage.css("min-height", newsHeight);
+  newsPage.css("height", newsHeight);
+
+  let height = newsMax + headerHeight + footerHeight + 5;
+  $("div.card#newsTile").each(function() {
+    $(this).css("min-height", height);
+    $(this).css("max-height", height);
+    $(this).css("height", height);
+  });
 }
 
 function createGalleries() {}

@@ -8,15 +8,16 @@ function createNewsTiles() {
         '" alt="Card image cap">';
     var ellipses = newstile.desc.length > 200 ? " ... " : "";
     descriptionSnippet = newstile.desc.substring(0, 200);
-    return ( // data-aos="fade-up"
-      '<div class="card" id="newsTile"><div id="newsHead" class="card-header">' +
+    return (
+      // data-aos="fade-up"
+      '<div class="card" id="newsTile" data-aos="zoom-out-up"><div id="newsHead" class="card-header">' +
       newstile.date +
       '</div><div class="card-body" id="newsTileBody">' +
       img +
       '<p class="card-text p-0">' +
       descriptionSnippet +
       ellipses +
-      '</p></div><div class="card-footer pt-0" id="newsFoot"><button type="button" class="btn ' + 
+      '</p></div><div class="card-footer pt-0" id="newsFoot"><button type="button" class="btn ' +
       'btn-outline-primary float-right m-1" data-toggle="modal" data-target=".readmore' +
       index +
       '">Read More</button></div></div>'
@@ -51,10 +52,10 @@ function createNewsTiles() {
   $(document).ready(function() {
     var imagesLoaded = 0;
 
-    $('img#instaPic').on('load', function(event) {
+    $("img#instaPic").on("load", function(event) {
       imagesLoaded++;
       if (imagesLoaded == 20) {
-        fixNewsTiles()
+        fixNewsTiles();
       }
     });
   });
