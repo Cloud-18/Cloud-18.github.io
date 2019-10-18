@@ -367,7 +367,8 @@ var team = [
     name: "Connor_Orcutt",
     major: "me",
     grad: 22,
-    first: 19
+    first: 19,
+    hide: true
   },
   {
     name: "Evan_Garber",
