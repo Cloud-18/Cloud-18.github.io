@@ -235,6 +235,7 @@ $(document).ready(function() {
     createSponsorLink();
     $(window).scroll(scrollAction);
     $(window).resize(fixNewsTiles);
+    $("a.navbar-brand").click(closeNav);
     if (mobile) {
       //console.log(mobile);
       $("#about").css("padding-bottom", 50 + $("#jumpcar").height());
