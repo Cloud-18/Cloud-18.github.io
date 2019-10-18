@@ -149,11 +149,11 @@ function scrollAction() {
   }
 }
 
-function adjustNavbar() {
+function adjustNavbar(teamPage) {
   if (!$("#navbarNav").is(":visible")) {
     $("nav#mynav").addClass("bg-white");
     $("nav#mynav").addClass("bgR");
-  } else if (!scrolledIntoElement("#about")) {
+  } else if (teamPage || !scrolledIntoElement("#about")) {
     for (var i = 1; i <= 256; i += 5) {
       let x = (1 / 255) * (256 - i);
       setTimeout(function() {
@@ -173,12 +173,6 @@ function adjustNavbar() {
 }
 
 function disableScrolling() {
-  // var x = window.scrollX;
-  // var y = window.scrollY;
-  // window.onscroll = function() {
-  //   window.scrollTo(x, y);
-  // };
-
   // lock scroll position, but retain settings for later
   var scrollPosition = [
     self.pageXOffset ||
@@ -196,8 +190,6 @@ function disableScrolling() {
 }
 
 function enableScrolling() {
-  // window.onscroll = function() {};
-
   // un-lock scroll position
   var html = jQuery("html");
   var scrollPosition = html.data("scroll-position");
