@@ -123,6 +123,7 @@ function scrollAction() {
       $(this).addClass("active-social-btn");
     });
     $("#social-background").removeClass("social-btn");
+    $("nav#mynav").addClass("bg-white");
   } else if (scrolledIntoElement("#about")) {
     $("nav#mynav").addClass("bg-white");
     $("nav#mynav").removeClass("team-fix");
@@ -145,6 +146,29 @@ function scrollAction() {
       $(this).removeClass("active-social-btn");
     });
     $("#social-background").addClass("social-btn");
+  }
+}
+
+function adjustNavbar() {
+  if (!$("#navbarNav").is(":visible")) {
+    $("nav#mynav").addClass("bg-white");
+    $("nav#mynav").addClass("bgR");
+  } else if (!scrolledIntoElement("#about")) {
+    for (var i = 1; i <= 256; i += 5) {
+      let x = (1 / 255) * (256 - i);
+      setTimeout(function() {
+        if (x === 1) {
+          $("nav#mynav").removeClass("bg-white");
+        }
+        $("nav#mynav").css(
+          "background-color",
+          "rgba(255, 255, 255, " + x + ")"
+        );
+      }, i);
+    }
+    setTimeout(function() {
+      $("nav#mynav").removeClass("bgR");
+    }, 350);
   }
 }
 

@@ -23,7 +23,9 @@
 
   <body data-spy="scroll" data-target="#mynav" data-offset="10">
     <nav id="mynav" class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="#">RIOT RACING<!--img src="assets/images/rr_brand.png" alt="RIOT RACING" onerror="this.style.display='none'" /--></a>
+      <a class="navbar-brand" href="#"
+        >RIOT RACING<!--img src="assets/images/rr_brand.png" alt="RIOT RACING" onerror="this.style.display='none'" /--></a
+      >
       <div class="social-btn mobile-only" id="social-background">
         <a
           class="navbar-brand social-btn"
@@ -61,6 +63,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onclick="adjustNavbar()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -70,10 +73,14 @@
       >
         <ul id="naviconlist" class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#about" onclick="return closeNav()">About</a>
+            <a class="nav-link" href="#about" onclick="return closeNav()"
+              >About</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#news" onclick="return closeNav()">News</a>
+            <a class="nav-link" href="#news" onclick="return closeNav()"
+              >News</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="theteam.html" id="navbar-team"
@@ -81,16 +88,22 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sponsorship" onclick="return closeNav()">Sponsorship</a>
+            <a class="nav-link" href="#sponsorship" onclick="return closeNav()"
+              >Sponsorship</a
+            >
           </li>
           <!--li class="nav-item">
             <a class="nav-link" href="#donate">Donate</a>
           </li-->
           <li class="nav-item">
-            <a class="nav-link" href="#results" onclick="return closeNav()">Results</a>
+            <a class="nav-link" href="#results" onclick="return closeNav()"
+              >Results</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery" onclick="return closeNav()">Gallery</a>
+            <a class="nav-link" href="#gallery" onclick="return closeNav()"
+              >Gallery</a
+            >
           </li>
         </ul>
       </div>
@@ -266,21 +279,21 @@
                 <p>We appreciate all types of support!</p>
                 <div>
                   <a
-                  class="btn btn-primary"
-                  style="margin-top: 10px;"
-                  href="assets/pdfs/SponsorBrochure.pdf"
-                  role="button"
-                  target="_blank"
-                  >Proposal</a
-                >
+                    class="btn btn-primary"
+                    style="margin-top: 10px;"
+                    href="assets/pdfs/SponsorBrochure.pdf"
+                    role="button"
+                    target="_blank"
+                    >Proposal</a
+                  >
                   <a
-                  class="btn btn-primary"
-                  style="margin-top: 10px;"
-                  href="assets/pdfs/SponsorBrochure.pdf"
-                  role="button"
-                  target="_blank"
-                  >Brochure</a
-                >
+                    class="btn btn-primary"
+                    style="margin-top: 10px;"
+                    href="assets/pdfs/SponsorBrochure.pdf"
+                    role="button"
+                    target="_blank"
+                    >Brochure</a
+                  >
                 </div>
                 <a
                   class="btn btn-primary"

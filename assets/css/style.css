@@ -42,7 +42,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.9);
 }
 
-nav#mynav:not(.bg-white) ul {
+nav#mynav:not(.bg-white):not(.bgR) ul {
   padding: 0 50px;
   background-color: rgba(0, 0, 0, 0.5);
   /* border-radius: 20px; */
@@ -61,11 +61,11 @@ i#mike3 {
   color: #cd7f32;
 }
 
-nav#mynav:not(.bg-white) li {
+nav#mynav:not(.bg-white):not(.bgR) li {
   transform: skewX(10deg);
 }
 
-nav#mynav:not(.bg-white) li a {
+nav#mynav:not(.bg-white):not(.bgR) li a {
   color: white;
 }
 
