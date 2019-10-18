@@ -3,20 +3,21 @@ function createNewsTiles() {
     var img = "";
     if (newstile.imageloc != "" && newstile.imageloc != "None")
       img =
-        '<img class="card-img-top" src="' +
+        '<img id="instaPic" class="card-img-top" src="' +
         newstile.imageloc +
         '" alt="Card image cap">';
     var ellipses = newstile.desc.length > 200 ? " ... " : "";
     descriptionSnippet = newstile.desc.substring(0, 200);
-    return (
-      '<div class="card" data-aos="fade-up" id="newsTile"><div class="card-header">' +
+    return ( // data-aos="fade-up"
+      '<div class="card" id="newsTile"><div id="newsHead" class="card-header">' +
       newstile.date +
-      '</div><div class="card-body"><h5 class="card-title"></h5>' +
+      '</div><div class="card-body" id="newsTileBody">' +
       img +
-      '<p class="card-text">' +
+      '<p class="card-text p-0">' +
       descriptionSnippet +
       ellipses +
-      '</p><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".readmore' +
+      '</p></div><div class="card-footer pt-0" id="newsFoot"><button type="button" class="btn ' + 
+      'btn-outline-primary float-right m-1" data-toggle="modal" data-target=".readmore' +
       index +
       '">Read More</button></div></div>'
     );
@@ -46,4 +47,15 @@ function createNewsTiles() {
 
   if (mobile) $("div#tiles").width(322 * newstiles.length);
   else $("div#tiles").append('<div class="verti"></div>');
+
+  $(document).ready(function() {
+    var imagesLoaded = 0;
+
+    $('img#instaPic').on('load', function(event) {
+      imagesLoaded++;
+      if (imagesLoaded == 20) {
+        fixNewsTiles()
+      }
+    });
+  });
 }

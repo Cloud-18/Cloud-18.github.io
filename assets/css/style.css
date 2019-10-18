@@ -419,6 +419,15 @@ div#about.page {
   position: relative;
 }
 
+div.card-body {
+  height: auto;
+}
+
+div.card-footer {
+  background-color: white;
+  border-top: 0;
+}
+
 div#about img {
   position: absolute;
   width: 50%;
