@@ -1,5 +1,17 @@
+var usingIE =
+  window.navigator.userAgent.indexOf("MSIE ") > 0 ||
+  window.navigator.userAgent.indexOf("Trident/") > 0;
+var usingEdge = !usingIE && window.navigator.userAgent.indexOf("Edge/") > 0;
+var hasScrolled = false;
+
+console.log("IE: " + usingIE);
+console.log("Edge: " + usingEdge);
+
 AOS.init({
-  duration: 1200
+  duration: 1200,
+  disable: function() {
+    return usingIE;
+  }
 });
 
 var mobile = false;
@@ -114,6 +126,10 @@ function fixNewsTiles() {
 function createGalleries() {}
 
 function scrollAction() {
+  if (!hasScrolled && usingEdge) {
+    fixNewsTiles();
+    hasScrolled = true;
+  }
   if (scrolledIntoElement("#team") && !scrolledIntoElement("#sponsorship")) {
     $("a.nav-link").each(function() {
       $(this).removeClass("txt-black");

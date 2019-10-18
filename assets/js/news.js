@@ -54,6 +54,7 @@ function createNewsTiles() {
 
     $("img#instaPic").on("load", function(event) {
       imagesLoaded++;
+      console.log(imagesLoaded);
       if (imagesLoaded == 20) {
         fixNewsTiles();
       }
