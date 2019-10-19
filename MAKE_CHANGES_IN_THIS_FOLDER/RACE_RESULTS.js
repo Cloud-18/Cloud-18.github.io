@@ -229,7 +229,7 @@ var results = {
         "mike": 3,
         "car": {
             "name": "r14",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/r14.jpg'
         },
         "racetitles": ["UTEP", "Kansas", "Illinois"],
         "races": [{
@@ -274,7 +274,7 @@ var results = {
         "mike": 0,
         "car": {
             "name": "r13",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/r13.jpg'
         },
         "racetitles": ["Tennessee", "Washington", "Rochester"],
         "races": [{
@@ -316,7 +316,7 @@ var results = {
         "mike": 2,
         "car": {
             "name": "2nd Diff. Car",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/12.jpg'
         },
         "racetitles": ["Auburn", "Wisconsin", "Oregon"],
         "races": [{
@@ -358,7 +358,7 @@ var results = {
         "mike": 0,
         "car": {
             "name": "1st Diff. Car",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/11.jpg'
         },
         "racetitles": ["Birmingham", "Illinois", "Kansas"],
         "races": [{
@@ -400,7 +400,7 @@ var results = {
         "mike": 0,
         "car": {
             "name": "Semi-trailing",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/semi.jpg'
         },
         "racetitles": ["Carolina", "Rochester", "Washington"],
         "races": [{
@@ -444,7 +444,7 @@ var results = {
         "mike": 2,
         "car": {
             "name": "J-Arm",
-            "imgloc": 'assets/images/cars/r18.jpg'
+            "imgloc": 'assets/images/cars/j-arm.jpg'
         },
         "racetitles": ["Alabama", "Oregon", "Wisconsin"],
         "races": [{

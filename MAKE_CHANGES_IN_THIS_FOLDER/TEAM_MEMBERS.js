@@ -81,6 +81,13 @@ var team = [
     prev: ["Vehicle Dynamics"]
   },
   {
+    name: "Andrew_Turner",
+    major: "me",
+    grad: 22,
+    first: 19,
+    other: ["Driveline"]
+  },
+  {
     name: "Kyle_Mellendorf",
     major: "mfet",
     grad: 21,

@@ -121,7 +121,7 @@ function dispResults(year) {
     yearresults.car.name +
     '</h2><img src="' +
     yearresults.car.imgloc +
-    '" alt="Car from ' +
+    '" onerror=this.src="assets/images/cars/Not-Pictured.jpg" alt="Car from ' +
     year +
     '">' +
     mikeText;
