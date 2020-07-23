@@ -1,11 +1,10 @@
-var usingIE =
-  window.navigator.userAgent.indexOf("MSIE ") > 0 ||
-  window.navigator.userAgent.indexOf("Trident/") > 0;
+var usingIE = window.navigator.userAgent.indexOf("MSIE ") > 0 || window.navigator.userAgent.indexOf("Trident/") > 0;
 var usingEdge = !usingIE && window.navigator.userAgent.indexOf("Edge/") > 0;
 var hasScrolled = false;
 
-console.log("IE: " + usingIE);
-console.log("Edge: " + usingEdge);
+if (window.navigator.userAgent.indexOf("MSIE ") > 0 || window.navigator.userAgent.indexOf("Trident/") > 0) {
+  window.parent.location = "http://www-staging.rit.edu/clubs/baja/letstrysomethingelse.html";
+}
 
 AOS.init({
   duration: 1200,
@@ -28,7 +27,6 @@ var scrollpositions = [];
 var scrolllock = false;
 var i = 0;
 
-// pages = ["#about", "#news", "#team"];
 var galleryYears = [2018, 2017, 2016, 2015];
 
 function closeNav() {
@@ -82,7 +80,7 @@ function inarow(delta) {
     consecutivedown = 0;
     consecutiveup++;
   }
-  //console.log(consecutivedown, consecutiveup);
+
   if (consecutivedown == margin) {
     consecutivedown = 0;
     return -1;
@@ -127,7 +125,7 @@ function createGalleries() {}
 
 function scrollAction() {
   if (!hasScrolled && usingEdge) {
-    fixNewsTiles();
+    //fixNewsTiles();
     hasScrolled = true;
   }
   if (scrolledIntoElement("#team") && !scrolledIntoElement("#sponsorship")) {
@@ -198,7 +196,7 @@ function disableScrolling() {
       document.documentElement.scrollTop ||
       document.body.scrollTop
   ];
-  var html = jQuery("html"); // it would make more sense to apply this to body, but IE7 won't have that
+  var html = jQuery("html");
   html.data("scroll-position", scrollPosition);
   html.data("previous-overflow", html.css("overflow"));
   html.css("overflow", "hidden");
@@ -219,14 +217,13 @@ var bkgtxt =
 var file = "";
 
 if (!mobile) {
-  //console.log("Setting Width");
   $("#navbarNav").css("margin-right", $("a.navbar-brand").width() - 100);
 }
 
 $(document).ready(function() {
+
   $(".page").each(function() {
     scrollpositions.push($(this).offset().top);
-    //console.log(scrollpositions);
   });
   file = window.document.location.href.split("/");
   file = file[file.length - 1].split("#");
@@ -253,7 +250,6 @@ $(document).ready(function() {
     $(window).resize(fixNewsTiles);
     $("a.navbar-brand").click(closeNav);
     if (mobile) {
-      //console.log(mobile);
       $("#about").css("padding-bottom", 50 + $("#jumpcar").height());
     }
     i = 0;
