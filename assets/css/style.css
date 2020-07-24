@@ -40,6 +40,14 @@ div div.title-nav-container {
   padding-bottom: 1.55vh !important;
 }
 
+div div#iconcontainer>a>svg {
+  --cloud-aspect: calc(1.1vw + 18px);
+  height: var(--cloud-aspect);
+  width: var(--cloud-aspect);
+  margin-left: 0.1vw;
+  margin-right: 0.1vw;
+}
+
 /* main-content: general */
 
 div div.center-cloud-content {
