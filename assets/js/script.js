@@ -19,8 +19,8 @@ var carosuel = function () {
     setTimeout(() => {
         images[last].classList.add('hiddenC')
         images[last].classList.remove(names[last])
-        setTimeout(carosuel, 3550)
+        setTimeout(carosuel, 5050)
     }, 1450)
 }
 
-setTimeout(carosuel, 5500);
+setTimeout(carosuel, 7000);
