@@ -44,8 +44,8 @@ div div#iconcontainer>a>svg {
   --cloud-aspect: calc(1.1vw + 18px);
   height: var(--cloud-aspect);
   width: var(--cloud-aspect);
-  margin-left: 0.1vw;
-  margin-right: 0.1vw;
+  margin-left: 0.15vw;
+  margin-right: 0.15vw;
 }
 
 /* main-content: general */

@@ -1,0 +1,26 @@
+div#contact-panel>h4 {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+div div#contact-panel h5 {
+    padding-top: 4.5vh;
+    font-weight: bold;
+    font-size: 0.9;
+}
+
+div#contact-panel div.dev-credit a:hover,
+div#contact-panel a i:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div#contact-panel a i,
+div#contact-panel div.dev-credit a {
+    color: #007bff;
+}
+
+div#contact-panel div.dev-credit {
+    font-size: 0.65em;
+    margin-top: 10.3vh;
+}
