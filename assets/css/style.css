@@ -5,7 +5,7 @@ body {
 }
 
 img.findMe {
-  height: 25vh;
+  width: 70%;
   position: absolute;
   top: 0;
   left: 0;
