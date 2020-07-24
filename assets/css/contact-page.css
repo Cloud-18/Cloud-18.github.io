@@ -20,7 +20,16 @@ div#contact-panel div.dev-credit a {
     color: #007bff;
 }
 
+div#contact-panel a i {
+    font-size: 1.15em;
+}
+
+div#contact-panel div.dev-credit a {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
 div#contact-panel div.dev-credit {
-    font-size: 0.65em;
+    font-size: 0.625em;
     margin-top: 10.3vh;
 }
