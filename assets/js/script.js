@@ -1,4 +1,5 @@
 const images = document.getElementsByClassName('findMe');
+const bios = document.getElementsByClassName('bio-text');
 var counter;
 const names = ['zakh', 'andrew', 'nathan', 'jelly'];
 
@@ -15,12 +16,15 @@ var carosuel = function () {
     images[counter].classList.remove('hiddenC')
     images[last].classList.add(names[last])
     images[last].classList.remove('staticBackground')
+    bios[last].classList.add('textWhiteOut')
+    bios[counter].classList.add('showText')
 
     setTimeout(() => {
         images[last].classList.add('hiddenC')
         images[last].classList.remove(names[last])
+        bios[last].classList.remove('textWhiteOut', 'showText')
         setTimeout(carosuel, 5050)
     }, 1450)
 }
 
-setTimeout(carosuel, 7000);
+setTimeout(carosuel, 6750);
