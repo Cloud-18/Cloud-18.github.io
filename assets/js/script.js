@@ -27,4 +27,4 @@ var carosuel = function () {
     }, 1450)
 }
 
-setTimeout(carosuel, 6750);
+setTimeout(carosuel, 1500);
