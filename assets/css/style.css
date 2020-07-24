@@ -7,7 +7,7 @@ body {
 img.findMe {
   width: 70%;
   position: absolute;
-  top: 0;
+  top: 2vh;
   left: 0;
 }
 
@@ -16,12 +16,12 @@ div div.meet-band-pane>img.hiddenC {
 }
 
 div.meet-band-pane {
-  height: 5px;
+  height: 20vh;
 }
 
 div.inline.col-6 {
   padding: 0px;
-  width: 49%;
+  width: 49.5%;
 }
 
 img.zakh.staticBackground,
@@ -43,13 +43,14 @@ div.meet-band-pane>img.andrew {
 
 .cloud-heading{
   font-family: 'Concert-One', sans-serif;
-  font-size: 7em;
+  font-size: 10vh;
   padding-top: 2%;
   padding-bottom: 0.5%;
 }
 
-div#main-content.col-12 {
+div div#main-content {
   padding: 0px;
+  height: 63vh;
 }
 
 #main-content h3#who {
@@ -61,33 +62,21 @@ div#main-content.col-12 {
   width: 39vw;
   vertical-align: top;
   margin-top: 3vh;
-}
-
-a.social-btn {
-  padding: 0px;
-  margin: 8px;
-  margin-top: 0px;
-  font-size: 1.5rem;
+  margin-bottom: 3vh;
 }
 
 .inline {
   display: inline-block;
-}
-
-a.social-btn {
-  color: #000;
-}
-
-a.social-btn:hover {
-  color: #000;
+  height: 100%;
 }
 
 img#main-image {
   width: 20%;
   height: auto;
-  margin-top: 0px;
+  margin-top: 3.5%;
   margin-left: 5%;
   margin-right: 5%;
+  vertical-align: top;
 }
 
 .no-touchevents #usersite-container div a:focus,
