@@ -24,6 +24,8 @@ body {
   margin-bottom: 0px;
   cursor: pointer;
   color: black;
+
+  text-shadow: 1px 1px 0px white, 3px 3px 0px black;
 }
 
 .cloud-heading:hover {
@@ -100,7 +102,7 @@ div.inline.col-6 {
 
 /* bio section-pictures */
 
-img.findMe {
+img.headshot {
   width: 70%;
   position: absolute;
   top: 2vh;

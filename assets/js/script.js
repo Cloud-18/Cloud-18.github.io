@@ -1,4 +1,4 @@
-const images = document.getElementsByClassName('findMe');
+const images = document.getElementsByClassName('headshot');
 const bios = document.getElementsByClassName('bio-text');
 var counter;
 const names = ['zakh', 'andrew', 'nathan', 'jelly'];
