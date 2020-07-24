@@ -4,11 +4,52 @@ body {
   overflow-y: hidden;
 }
 
+img.findMe {
+  height: 25vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div div.meet-band-pane>img.hiddenC {
+  display: none;
+}
+
+div.meet-band-pane {
+  height: 5px;
+}
+
+div.inline.col-6 {
+  padding: 0px;
+  width: 49%;
+}
+
+img.zakh.staticBackground,
+img.jelly.staticBackground,
+img.nathan.staticBackground,
+img.andrew.staticBackground {
+  animation: none;
+  z-index: 1;
+}
+
+div.meet-band-pane>img.zakh,
+div.meet-band-pane>img.jelly,
+div.meet-band-pane>img.nathan,
+div.meet-band-pane>img.andrew {
+  display: inline !important;
+  animation: 1.5s ellipse;
+  z-index: 2;
+}
+
 .cloud-heading{
   font-family: 'Concert-One', sans-serif;
   font-size: 7em;
   padding-top: 2%;
   padding-bottom: 0.5%;
+}
+
+div#main-content.col-12 {
+  padding: 0px;
 }
 
 #main-content h3#who {
@@ -17,9 +58,9 @@ body {
 }
 
 #main-content div.mid-pane {
-  width: 39.5%;
+  width: 39vw;
   vertical-align: top;
-  margin-top: 6.5vh;
+  margin-top: 3vh;
 }
 
 a.social-btn {
@@ -44,7 +85,7 @@ a.social-btn:hover {
 img#main-image {
   width: 20%;
   height: auto;
-  margin-top: 2%;
+  margin-top: 0px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -52,4 +93,9 @@ img#main-image {
 .no-touchevents #usersite-container div a:focus,
 .no-touchevents #usersite-container div a:hover {
   text-decoration: none;
+}
+
+@keyframes ellipse {
+  0% { clip-path: ellipse(80% 80%); }
+  100% { clip-path: ellipse(0% 20%); }
 }
