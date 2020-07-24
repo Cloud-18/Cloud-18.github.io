@@ -4,38 +4,75 @@ body {
   overflow-y: hidden;
 }
 
-img.findMe {
-  width: 70%;
-  position: absolute;
-  top: 2vh;
-  left: 0;
+.inline {
+  display: inline-block;
+  height: 100%;
 }
 
-div#bio-section>span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.0;
+@keyframes inset {
+  0% { clip-path: inset(0% round 0%); }
+  100% { clip-path: inset(50% round 50%); }
 }
 
-div#bio-section>span h3 {
-  font-weight: bold;
-  padding-top: 1%;
+/* heading */
+
+.cloud-heading{
+  font-family: 'Concert-One', sans-serif;
+  font-size: 10vh;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+  margin-bottom: 0px;
 }
 
-div#bio-section>span.showText {
-  opacity: 1.0;
-  transition: opacity 2s;
+li div a.top.no-pjax {
+  font-size: 1.75vh;
 }
 
-div#bio-section>span.showText.textWhiteOut {
-  opacity: 0.0;
-  transition: opacity 0.8s;
+/* social media buttons */
+
+.no-touchevents #usersite-container div a:focus,
+.no-touchevents #usersite-container div a:hover {
+  text-decoration: none;
 }
 
-div div.meet-band-pane>img.hiddenC {
-  display: none;
+div div.title-nav-container {
+  padding-top: 1.2vh !important;
+  padding-bottom: 1.55vh !important;
 }
+
+/* main-content: general */
+
+div div.center-cloud-content {
+  width: 60%;
+}
+
+div div#main-content {
+  padding: 0px;
+  height: 63vh;
+  text-align: center;
+}
+
+/* who are we section */
+
+#main-content div.mid-pane {
+  width: 100%;
+  vertical-align: top;
+  margin-bottom: 3vh;
+}
+
+#main-content h3#who {
+  text-align: left;
+  font-family: 'Concert-One', sans-serif;
+  margin-top: 0px;
+  font-size: 3vh;
+}
+
+div.mid-pane > p {
+  font-size: 1.8vh;
+  text-align: left;
+}
+
+/* bio section-general */
 
 div.meet-band-pane {
   height: 20vh;
@@ -44,6 +81,19 @@ div.meet-band-pane {
 div.inline.col-6 {
   padding: 0px;
   width: 49.5%;
+}
+
+/* bio section-pictures */
+
+img.findMe {
+  width: 70%;
+  position: absolute;
+  top: 2vh;
+  left: 0;
+}
+
+div div.meet-band-pane>img.hiddenC {
+  display: none;
 }
 
 img.zakh.staticBackground,
@@ -63,60 +113,33 @@ div.meet-band-pane>img.andrew {
   z-index: 2;
 }
 
-.cloud-heading{
-  font-family: 'Concert-One', sans-serif;
-  font-size: 10vh;
-  padding-top: 2%;
-  padding-bottom: 0.5%;
+/* bio section-text */
+
+div#bio-section>span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.0;
+  text-align: left;
+  font-size: 1.8vh;
 }
 
-div div#main-content {
-  padding: 0px;
-  height: 63vh;
+div#bio-section>span h3 {
+  font-weight: bold;
+  padding-top: 1%;
+  font-size: 3.5vh;
 }
 
-#main-content h3#who {
-  font-family: 'Concert-One', sans-serif;
-  margin-top: 0px;
+div#bio-section>span h4 {
+  font-size: 3vh;
 }
 
-#main-content div.mid-pane {
-  width: 39vw;
-  vertical-align: top;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+div#bio-section>span.showText {
+  opacity: 1.0;
+  transition: opacity 2s;
 }
 
-.inline {
-  display: inline-block;
-  height: 100%;
-}
-
-img#main-image {
-  width: 20%;
-  height: auto;
-  margin-top: 3.5%;
-  vertical-align: top;
-}
-
-img#main-image.left {
-  float: left;
-  margin-left: 2%;
-  margin-right: 8%
-}
-
-img#main-image.right {
-  float: right;
-  margin-right: 2%;
-  margin-left: 8%
-}
-
-.no-touchevents #usersite-container div a:focus,
-.no-touchevents #usersite-container div a:hover {
-  text-decoration: none;
-}
-
-@keyframes inset {
-  0% { clip-path: inset(0% round 0%); }
-  100% { clip-path: inset(50% round 50%); }
+div#bio-section>span.showText.textWhiteOut {
+  opacity: 0.0;
+  transition: opacity 0.8s;
 }
