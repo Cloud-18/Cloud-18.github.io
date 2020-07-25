@@ -1,0 +1,13 @@
+iframe.music-embed {
+    width: 20%;
+    height: 50%;
+}
+
+div#main-content>h2.music-title {
+    margin: 0px;
+    font-weight: bold;
+}
+
+div#main-content {
+    margin-top: -1.5vh;
+}
