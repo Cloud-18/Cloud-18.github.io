@@ -28,3 +28,21 @@ var carosuel = function () {
 }
 
 setTimeout(carosuel, 1500);
+
+
+$(document).ready(function(){
+
+$('a.coming-soon').hover(
+    e => { // in
+        $('span.coming-soon').addClass($(e.target).parent().attr('id'))
+        $('span.coming-soon').addClass('active')
+    },
+    e => { // out
+        $('span.coming-soon').removeClass('active')
+        setTimeout(() => {
+            $('span.coming-soon').removeClass($(e.target).parent().attr('id'))
+        }, 550)
+    }
+)
+
+});

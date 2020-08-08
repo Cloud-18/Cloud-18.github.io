@@ -9,6 +9,45 @@ body {
   height: 100%;
 }
 
+a.coming-soon:hover {
+  cursor: not-allowed;
+}
+
+span.coming-soon {
+  position: absolute;
+  font-size: calc(0.3vw + 1vh);
+  font-weight: bold;
+  color: gray;
+  margin-top: -1.5vh;
+  opacity: 0.0;
+  transition: opacity 0.5s;
+}
+
+span.coming-soon.active {
+  opacity: 1.0;
+  transition: opacity 0.5s;
+}
+
+span.coming-soon.a {
+  margin-left: 42.25vw;
+}
+
+span.coming-soon.b {
+  margin-left: 47.5vw;
+}
+
+span.coming-soon.c {
+  margin-left: 50vw;
+}
+
+span.coming-soon.d {
+  margin-left: 52.625vw;
+}
+
+span.coming-soon.e {
+  margin-left: 55.3vw;
+}
+
 @keyframes inset {
   0% { clip-path: inset(0% round 0%); }
   100% { clip-path: inset(50% round 50%); }
