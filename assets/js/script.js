@@ -35,7 +35,9 @@ $(document).ready(function(){
 $('a.coming-soon').hover(
     e => { // in
         $('span.coming-soon').addClass($(e.target).parent().attr('id'))
-        $('span.coming-soon').addClass('active')
+        setTimeout(() => {
+            $('span.coming-soon').addClass('active')
+        }, 100)
     },
     e => { // out
         $('span.coming-soon').removeClass('active')
