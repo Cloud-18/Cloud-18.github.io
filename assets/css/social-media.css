@@ -1,182 +1,48 @@
-
-
-
-.facebook {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
-  padding : 10px;
-width:39px;
-height: 39px; 
-
-
+/* Social Media Logo - General */
+.facebook, .instagram,
+.youtube, .soundcloud,
+.spotify, .apple {
+    position: relative;
+    -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
+    transition: color 0.2s, scale 0.1s, transform 0.s;
+    padding : 10px;
+    width: 39px;
+    height: 39px; 
+    fill: #000000;
+    &:hover {
+        -ms-transform: scale(1.5, 1.5);     /* IE 9 */
+        -webkit-transform: scale(1.5, 1.5); /* Chrome, Safari, Opera */
+        transform: scale(1.5, 1.5);
+    }
 }
 
-
-
-
-
-.facebook:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: #3b5998;
-
-
+/* Logo Colors (on hover) */
+.facebook:hover {
+    fill: #3b5998;
 }
-
-.twitter {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
- padding : 10px;
-width:39px;
-height: 39px; 
-
-}
-
-.twitter:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: #55acee;
-
-
-}
-
-.instagram {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
- 
-padding : 10px;
-width:39px;
-height: 39px; 
-
-fill: #000000;
-
-
-}
-
 .instagram:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: url(#instagradient);
-
-
+    fill: url(#instagradient);
+}
+.youtube:hover {
+    fill: #c4302b;
+}
+.soundcloud:hover {
+    fill: #FF6600;
+}
+.spotify:hover {
+    fill: #6AE368;
+}
+.apple:hover {
+    fill: url(#applegradient);
 }
 
-.youtube {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
-  padding : 10px;
-width:39px;
-height: 39px; 
-
-
-}
-
-.youtube:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: #c4302b;
-
-
-}
-
-.soundcloud {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
-padding : 10px;
-width:39px;
-height: 39px;  
-
-
-}
-
-.soundcloud:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: #FF6600;
-
-
-}
-
-.spotify {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
-padding : 10px;
-width:39px;
-height: 39px; 
-
-fill:  #000000;
-
-
-}
-
-.spotify:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: #6AE368;
-
-
-}
-
-.apple {
-
-    position:relative;
-  -webkit-transition: color 0.1s, scale 0.1s, transform 0.1s;
-transition: color 0.2s, scale 0.1s, transform 0.s;
-padding : 10px;
-width:39px;
-height: 39px;  
-
-fill: #000000;
-
-
-}
-
-.apple:hover{
-
-   -ms-transform: scale(1.5,1.5); /* IE 9 */
-  -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5,1.5);
-fill: url(#applegradient);
-
-
-}
-
+/* Container for all logos */
 #iconcontainer {
-margin-top: -20px;
-padding: 0;
- height: 65px;
- margin-right: auto !important;
-  width: 100% !important;
-text-align:center;
-      position:relative;
-
- 
-
+    margin-top: -20px;
+    padding: 0;
+    height: 65px;
+    margin-right: auto !important;
+    width: 100% !important;
+    text-align: center;
+    position: relative;
 }
-  
-
-

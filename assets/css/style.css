@@ -83,40 +83,22 @@ div div.center-cloud-content {
 }
 
 div div#main-content {
-  padding: 0px;
-  height: 63vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
   text-align: center;
 }
 
 /* who are we section */
 
-#main-content div.mid-pane {
-  width: 100%;
-  vertical-align: top;
-  margin-bottom: 3vh;
-}
-
-#main-content h3#who {
-  text-align: left;
+h3#who {
   font-family: 'Concert-One', sans-serif;
-  margin-top: 0px;
-  font-size: 3vh;
 }
 
-div.mid-pane > p {
-  font-size: 1.8vh;
+.text-align-left {
   text-align: left;
-}
-
-/* bio section-general */
-
-div.meet-band-pane {
-  height: 20vh;
-}
-
-div.inline.col-6 {
-  padding: 0px;
-  width: 49.5%;
 }
 
 /* bio section-pictures */
@@ -136,21 +118,11 @@ div.meet-band-pane > img {
 
 /* bio section-text */
 
-div#bio-section>span {
-  text-align: left;
-  font-size: 1.8vh;
-}
-
 div#bio-section>span h3 {
   font-weight: bold;
   padding-top: 1%;
-  font-size: 3.5vh;
-}
-
-div#bio-section>span h4 {
-  font-size: 3vh;
 }
 
 #bio-section {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
