@@ -1,12 +1,12 @@
 const images = document.getElementsByClassName('headshot');
 const bios = document.getElementsByClassName('bio-text');
 var counter;
-const names = ['zakh', 'andrew', 'nathan', 'jelly'];
+// const names = ['zakh', 'andrew', 'nathan', 'jelly'];
 
-for (counter = 1; counter < images.length; counter++) {
-    images[counter].classList.add('hiddenC');
-}
-counter = 0;
+// for (counter = 1; counter < images.length; counter++) {
+//     images[counter].classList.add('hiddenC');
+// }
+// counter = 0;
 
 var carosuel = function () {
     let last = counter;
@@ -27,7 +27,7 @@ var carosuel = function () {
     }, 1450)
 }
 
-setTimeout(carosuel, 1500);
+// setTimeout(carosuel, 1500);
 
 
 $(document).ready(function(){

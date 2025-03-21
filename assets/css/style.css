@@ -1,51 +1,16 @@
+:root {
+  --cloud-blue: #25BEFF;
+}
+
 html,
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .inline {
   display: inline-block;
   height: 100%;
-}
-
-a.coming-soon:hover {
-  cursor: not-allowed;
-}
-
-span.coming-soon {
-  position: absolute;
-  font-size: calc(0.3vw + 1vh);
-  font-weight: bold;
-  color: gray;
-  margin-top: -1.5vh;
-  opacity: 0.0;
-  transition: opacity 0.5s;
-}
-
-span.coming-soon.active {
-  opacity: 1.0;
-  transition: opacity 0.5s;
-}
-
-span.coming-soon.a {
-  margin-left: 42.25vw;
-}
-
-span.coming-soon.b {
-  margin-left: 47.5vw;
-}
-
-span.coming-soon.c {
-  margin-left: 50vw;
-}
-
-span.coming-soon.d {
-  margin-left: 52.625vw;
-}
-
-span.coming-soon.e {
-  margin-left: 55.3vw;
 }
 
 @keyframes inset {
@@ -76,7 +41,7 @@ span.coming-soon.e {
 }
 
 a.cloud-heading span:hover {
-  color: #cccccc;
+  color: var(--cloud-blue);
   transition: color 0.75s;
   transition-timing-function: ease-out;
 }
@@ -163,22 +128,7 @@ img.headshot {
   left: 0;
 }
 
-div div.meet-band-pane>img.hiddenC {
-  display: none;
-}
-
-img.zakh.staticBackground,
-img.jelly.staticBackground,
-img.nathan.staticBackground,
-img.andrew.staticBackground {
-  animation: none;
-  z-index: 1;
-}
-
-div.meet-band-pane>img.zakh,
-div.meet-band-pane>img.jelly,
-div.meet-band-pane>img.nathan,
-div.meet-band-pane>img.andrew {
+div.meet-band-pane > img {
   display: inline !important;
   animation: 1.5s inset;
   z-index: 2;
@@ -187,10 +137,6 @@ div.meet-band-pane>img.andrew {
 /* bio section-text */
 
 div#bio-section>span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.0;
   text-align: left;
   font-size: 1.8vh;
 }
@@ -205,12 +151,6 @@ div#bio-section>span h4 {
   font-size: 3vh;
 }
 
-div#bio-section>span.showText {
-  opacity: 1.0;
-  transition: opacity 2s;
-}
-
-div#bio-section>span.showText.textWhiteOut {
-  opacity: 0.0;
-  transition: opacity 0.8s;
+#bio-section {
+  padding-bottom: 50px;
 }
